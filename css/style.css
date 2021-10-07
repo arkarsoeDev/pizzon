@@ -86,9 +86,6 @@ html {
   padding: 200px 0px 100px 0px;
 }
 
-.banner-title {
-}
-
 .banner-heading {
   font-size: 50px;
   font-weight: 700;
@@ -336,10 +333,6 @@ html {
 .header__dropdown-content:hover {
   display: block;
 }
-
-.header__menu-item-container{
-}
-
 .header__menu-item{
   display: flex;
   align-items: center;
@@ -796,9 +789,6 @@ html {
 
 .menu__menu-bottom {
   margin-bottom: -10px;
-}
-
-.menu-container {
 }
 
 .menu__menu-item {
@@ -2350,8 +2340,6 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 .contact__form__btn:focus{
   outline: none;
-}
-.contact-map{
 }
 
 /* scroll-arrow */

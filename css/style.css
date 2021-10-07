@@ -394,6 +394,44 @@ html {
   text-decoration: none;
 }
 
+/* home__showcase navigator */
+.home__left,.home__right{
+  position: absolute;
+  top: 300px;
+  color: var(--main);
+  font-size: 50px;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+
+.home__left {
+  left: 30px; 
+}
+
+.home__right{
+  right: 30px;
+}
+
+/* chef carousel custom navigator */
+
+.chef__left,.chef__right{
+  position: absolute;
+  top: 130px;
+  color: var(--main);
+  font-size: 50px;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.chef__left{
+  left: -30px;
+}
+
+.chef__right{
+  right: -30px;
+}
+
 /* header__cart-dropdown */
 
 .header__cart-dropdown{

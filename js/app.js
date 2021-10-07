@@ -9,7 +9,7 @@ owl.owlCarousel({
   loop: true,
   margin: 30,
   autoplay: true,
-  nav: true,
+  nav: false,
   dots: false,
   autoplayTimeout: 4000,
   autoplayHoverPause: true,
@@ -43,8 +43,29 @@ owl3.owlCarousel({
   slideTransition: 'linear',
 });
 
-// header home show case with animation
-// Listen to owl events:
+// owl1 custom navigator
+// Go to the next item
+$('.chef__right').click(function() {
+  owl.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('.chef__left').click(function() {
+  // With optional speed parameter
+  // Parameters has to be in square bracket '[]'
+  owl.trigger('prev.owl.carousel', [300]);
+})
+
+// owl3 custom navigator
+// Go to the next item
+$('.home__right').click(function() {
+  owl3.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('.home__left').click(function() {
+  // With optional speed parameter
+  // Parameters has to be in square bracket '[]'
+  owl3.trigger('prev.owl.carousel', [300]);
+})
 
 // header dropdown
 

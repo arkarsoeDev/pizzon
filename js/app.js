@@ -73,25 +73,64 @@ function dropdown(key,content){
 }
 
 // menu list button
-var all = [1, 2, 3, 4, 7, 8];
-var salads = [7];
-var drinks = [3];
-var pasta = [8];
-var burgers = [7, 3, 8];
-var deserts = [3, 2];
-var pizza = [1, 3, 4];
+var all , salads, drinks, pasta, burgers, deserts,pizza;
+all = [1, 2, 3, 4, 7, 8];
+salads = [7];
+drinks = [3];
+pasta = [8];
+burgers = [7, 3, 8];
+deserts = [3, 2];
+pizza = [1, 3, 4];
+
+// menu1 list button
+var all1 , salads1, drinks1, pasta1, burgers1, deserts1,pizza1;
+all1 = [1,2,3,6,7,8];
+salads1 = [1,2];
+drinks1 = [3,6,7];
+pasta1 = [8,9];
+burgers1 = [10];
+deserts1 = [9,11];
+pizza1 = [1,2,3];
+
+// menu2 list button
+var all2 , salads2, drinks2, pasta2, burgers2, deserts2,pizza2;
+all2 = [12,13,14,15,16,17];
+salads2 = [12];
+drinks2 = [14,17,15];
+pasta2 = [14,15];
+burgers2 = [16];
+deserts2 = [16,13];
+pizza2 = [14,15,12];
 
 var menuBoxArr = [all, salads , drinks , pasta, burgers , deserts, pizza];
+var menu1BoxArr = [all1, salads1 , drinks1 , pasta1, burgers1 , deserts1, pizza1];
+var menu2BoxArr = [all2, salads2 , drinks2 , pasta2, burgers2 , deserts2, pizza2];
 
 menuFill(all);
+menu1Fill(all1);
+menu2Fill(all2);
 
-$(".menu__menu-tap-item").click(function (e) {
-  removeMenuClass();
-  this.classList.add("menu__menu-tap-item_active");
-  $(".menu-container").empty();
-  
-  menuFill(menuBoxArr[e.target.id])
+$(".menu__tap-click").click(function (e) {
+  menuClickExecute(e,this,'.menu-container',menuFill,menuBoxArr);
 });
+
+$(".menu1__tap-click").click(function (e) {
+  menuClickExecute(e,this,'.menu1__card-container',menu1Fill,menu1BoxArr);
+});
+
+$(".menu2__tap-click").click(function (e) {
+  menuClickExecute(e,this,'.menu2__card-container',menu2Fill,menu2BoxArr);
+});
+
+
+
+function menuClickExecute(e,addClass,container,fill,menuArr){
+  removeMenuClass();
+  addClass.classList.add("menu__menu-tap-item_active");
+  $(container).empty();
+  
+  fill(menuArr[e.target.id])
+}
 
 function menuFill(menuBox){
   for (var i = 0; i < menuBox.length; i++) {
@@ -104,6 +143,55 @@ function menuFill(menuBox){
           <span class="text-lightwarning">$20.50</span>
       </div>
     </div>
+    `);
+  }
+}
+
+function menu1Fill(menuBox){
+  for (var i = 0; i < menuBox.length; i++) {
+    $("#menu1Container").append(`
+    <div class="col-4">
+        <div class="menu1__item mt-4 animate__animated animate__fadeIn">
+            <div class="menu1__item__img-container">
+                <a href="#"><img src="img/menu-1/list-${menuBox[i]}.jpg" alt=""></a>
+            </div>
+            <div class="menu1__item__des  m-3">
+                <h5 class="menu1__item__title">barbecue</h5>
+                <ul class="menu1__item__ingredient">
+                    <li>Chicken</li>
+                    <li>Olive Oil</li>
+                    <li>Salt</li>
+                </ul>
+                <p class="menu1__item__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aut veniam, temporibus alias, natus beatae doloribus excepturi similique eaque sed odio eos voluptatem laboriosam. Hic fugiat impedit repellat beatae vel?
+                </p>
+                <a href="#" class="menu1__item__link">Order now</a>
+            </div>
+        </div>
+    </div>
+    `);
+  }
+}
+
+function menu2Fill(menuBox){
+  for (var i = 0; i < menuBox.length; i++) {
+    $("#menu2Container").append(`
+      <div class="col-6">
+      <div class="menu2__card d-flex align-items-center px-3 mb-3 animate__animated animate__fadeIn">
+          <div class="menu2__card__img mr-4">
+              <a href="#"><img src="img/menu-2/list-${menuBox[i]}.jpg" alt=""></a>
+          </div>
+          <div class="menu2__card__des w-100">
+              <div class="menu2__card__heading d-flex align-items-center justify-content-between my-2">
+                  <a href="#" class="menu2__card__title">barbecue pizza</a>
+                  <span class="menu2__card__price">$20.00</span>
+              </div>
+              <div class="menu2__card__text  py-2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus harum quisquam fuga aliquam optio dolores aperiam.</p>
+              </div>
+          </div>
+      </div>
+      </div>
     `);
   }
 }
@@ -137,8 +225,6 @@ function opendes(evt, desname){
   des_name.style.display = "block";
   evt.currentTarget.className += " active";
 }
-
-$("#des-para")[0].style.display = "block";
 
 // custom select js
 var x, i, j, l, ll, selElmnt, a, b, c;

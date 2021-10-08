@@ -812,10 +812,11 @@ html {
 
 .today-special__caption {
   transition: 0.5s;
+  color: var(--dark);
 }
 
 .today-special__caption:hover {
-  cursor: pointer;
+  text-decoration: none;
   color: var(--light-warning);
 }
 
@@ -1909,7 +1910,7 @@ html {
   transition: 0.4s;
   outline: none;
 }
-.item-detail__des__control-btn button:focus {
+.item-detail__des__control-btn .active {
   background-color: var(--main);
   color: var(--white);
 }
@@ -1967,7 +1968,15 @@ html {
 }
 .related-products__para__title {
   letter-spacing: var(--ls);
+  color: var(--dark);
+  transition: .3s;
 }
+
+.related-products__para__title:hover {
+  text-decoration: none;
+  color: var(--main);
+}
+
 .related-products__para__text {
   font-size: 14px;
   color: #999999;
@@ -2032,15 +2041,20 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 .select-selected:hover {
   color: var(--main);
 }
+
 .select-selected::after {
   position: absolute;
   content: "";
   top: 28px;
-  right: 25px;
+  right: 18px;
   width: 0;
   height: 0;
   border: 6px solid transparent;
   border-color: var(--dark) transparent transparent transparent;
+}
+
+.categories__price__select .select-selected::after{
+  right: 27px;
 }
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent var(--dark) transparent;
@@ -2078,6 +2092,24 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   background-color: rgba(0, 0, 0, 0.1);
 }
 /* parts connect with js might be done here  */
+.categories__pizza-item-img{
+  transition: .3s;
+}
+
+.categories__pizza-item-img:hover{
+  transform: translateY(-10px);
+}
+
+.categories__pizza-item-title {
+  transition: .3s;
+  color: var(--dark);
+}
+
+.categories__pizza-item-title:hover {
+  color: var(--main);
+  text-decoration: none;
+}
+
 .categories__order-btn {
   background-color: var(--dark);
   color: var(--white);
@@ -2086,7 +2118,9 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   font-size: 18px;
   letter-spacing: var(--ls);
   padding: 12px 40px;
+  transition: .3s;
 }
+
 .categories__order-btn:hover {
   background-color: var(--white);
   color: var(--dark);
@@ -2234,6 +2268,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 .cart__border-bottom{
   border-bottom: 1px solid #ddd;
 }
+
 .cart__btn,.cart__proceed-btn a{
   text-transform: uppercase;
   font-weight: bold;
@@ -2243,12 +2278,12 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   padding: 10px 30px;
   transition: .4s;
   letter-spacing: var(--ls);
-  text-decoration: none;
 }
 .cart__btn:hover,.cart__proceed-btn a:hover{
   border: 1px solid var(--main);
   background-color: var(--white);
   color: var(--main);
+  text-decoration: none;
 }
 .cart .mt {
   margin-top: 6rem;
@@ -2274,7 +2309,13 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   border: 1px solid #dddddd;
 }
 .checkout__order-item__text{
+  color: var(--dark);
   letter-spacing: .5px;
+  transition: .3s;
+}
+.checkout__order-item__text:hover{
+  color: var(--main);
+  text-decoration: none;
 }
 .checkout__order-item__price{
   font-size: 18px;

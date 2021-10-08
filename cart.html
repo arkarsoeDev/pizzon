@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="vendor/animate_it/animate.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-    <header class="container-fluid header">
+  <body>
+    <header id="header" class="container-fluid header">
       <div class="row">
           <div class="container">
               <div class="row">
                   <div class="col-12">
                       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pizza-nav">
-                          <a class="navbar-brand" href="#"><img src="img/footer-logo.png" class="nav-logo" alt=""></a>
+                          <a class="navbar-brand" href="index.html"><img src="img/footer-logo.png" class="nav-logo" alt=""></a>
                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
@@ -25,20 +26,95 @@
                           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                               <li class="nav-item mr-3 active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                              </li>
+                              <!-- this header__dropdown is work with app.js -->
+                              <div id="header__dropdown" class="header__dropdown">
+                                  <li class="nav-item mr-3">
+                                      <a class="nav-link" href="menu-1.html">Menu</a>
+                                  </li>
+                                  <div class="header__dropdown-content">
+                                      <div class="row">
+                                          <div class="col-9">
+                                              <div class="header__menu-item-container">
+                                                  <div class="row">
+                                                      <div class="col-4">
+                                                          <a href="shop-detail.html" class="header__menu-item">
+                                                              <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                              <div class="header__menu-item__des">
+                                                                  <p class="header__menu-item__name">pepproni</p>
+                                                                  <span class="header__menu-item__price">$12.22</span>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                      <div class="col-4">
+                                                          <a href="shop-detail.html" class="header__menu-item">
+                                                              <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                              <div class="header__menu-item__des">
+                                                                  <p class="header__menu-item__name">pepproni</p>
+                                                                  <span class="header__menu-item__price">$12.22</span>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                      <div class="col-4">
+                                                          <a href="shop-detail.html" class="header__menu-item">
+                                                              <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                              <div class="header__menu-item__des">
+                                                                  <p class="header__menu-item__name">pepproni</p>
+                                                                  <span class="header__menu-item__price">$12.22</span>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                      <div class="col-4">
+                                                          <a href="shop-detail.html" class="header__menu-item">
+                                                              <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                              <div class="header__menu-item__des">
+                                                                  <p class="header__menu-item__name">pepproni</p>
+                                                                  <span class="header__menu-item__price">$12.22</span>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                      <div class="col-4">
+                                                          <a href="shop-detail.html" class="header__menu-item">
+                                                              <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                              <div class="header__menu-item__des">
+                                                                  <p class="header__menu-item__name">pepproni</p>
+                                                                  <span class="header__menu-item__price">$12.22</span>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                      <div class="col-4">
+                                                          <a href="shop-detail.html" class="header__menu-item">
+                                                              <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                              <div class="header__menu-item__des">
+                                                                  <p class="header__menu-item__name">pepproni</p>
+                                                                  <span class="header__menu-item__price">$12.22</span>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-3">
+                                              <div class="header__menu-list">
+                                                  <ul>
+                                                      <li><a href="#">menu list</a></li>
+                                                      <li><a href="#">menu grid</a></li>
+                                                      <li><a href="#">special pizza</a></li>
+                                                      <li><a href="#">all typ</a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <li class="nav-item mr-3">
+                                  <a class="nav-link" href="blog.html">blog</a>
                               </li>
                               <li class="nav-item mr-3">
-                                <a class="nav-link" href="#">Today Special</a>
+                                  <a class="nav-link" href="reservation.html">reservation</a>
                               </li>
-                              <li class="nav-item mr-3">
-                                  <a class="nav-link" href="#">Menu</a>
-                                </li>
-                                <li class="nav-item mr-3">
-                                  <a class="nav-link" href="#">About us</a>
-                                </li>
-                                <li class="nav-item mr-3">
-                                  <a class="nav-link" href="#">Contact us</a>
-                                </li>
+
                               <li class="nav-item mr-3">
                                   <a href="#" class="nav-link">
                                       <div class="d-flex align-items-center">
@@ -47,20 +123,78 @@
                                       </div>
                                   </a>
                               </li>
-                              <li class="nav-item mr-3">
-                                  <a href="#" class="nav-link">
-                                      <div class="d-flex align-items-center">
-                                          <i class="fas fa-shopping-bag fa-lg text-lightwarning mr-2 color-switch"></i>
-                                          <p class="mb-0"><span>0</span> items - $ <span>0.00</span></p>
+                              
+                              <!-- this part is work with app.js -->
+                              <div id="header__cart-dropdown" class="header__cart-dropdown mr-3">
+                                  <li class="nav-item">
+                                      <a href="#" class="nav-link">
+                                          <div  class="d-flex align-items-center">
+                                              <i class="fas fa-shopping-bag fa-lg text-lightwarning mr-2 color-switch"></i>
+                                              <p class="mb-0"><span>0</span> items - $ <span>0.00</span></p>
+                                          </div>
+                                      </a>
+                                  </li>    
+                                  <div class="header__cart-dropdown-content">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <div class="header__cart-item-container">
+                                                  <div class="header__cart-item">
+                                                      <img src="img/1.png" class="header__cart-item__img" alt="">
+                                                      <div class="header__cart-item__para">
+                                                          <p class="header__cart-item__title">
+                                                              magehreta pizza
+                                                          </p>
+                                                          <p class="header__cart-item__price">$14.4</p>
+                                                          <div class="header__cart-item__qty">
+                                                              <label for="" class="header__cart-item__qty-label">Qty:</label>
+                                                              <input type="number" class="header__cart-item__qty-box" value="1">
+                                                          </div>
+                                                      </div>
+                                                      <a class="header__cart-item__cross-btn">
+                                                          <i class="fa fa-times fa-sm" aria-hidden="true"></i>
+                                                      </a>
+                                                  </div>
+                                                  <div class="header__cart-item">
+                                                      <img src="img/1.png" class="header__cart-item__img" alt="">
+                                                      <div class="header__cart-item__para">
+                                                          <p class="header__cart-item__title">
+                                                              magehreta pizza
+                                                          </p>
+                                                          <p class="header__cart-item__price">$14.4</p>
+                                                          <div class="header__cart-item__qty">
+                                                              <label for="" class="header__cart-item__qty-label">Qty:</label>
+                                                              <input type="number" class="header__cart-item__qty-box" value="1">
+                                                          </div>
+                                                      </div>
+                                                      <a class="header__cart-item__cross-btn">
+                                                          <i class="fa fa-times fa-sm" aria-hidden="true"></i>
+                                                      </a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-12">
+                                              <div class="header__cart-total d-flex justify-content-between align-items-center">
+                                                  <p class="header__cart-total__title mb-0">cart subtotal</p>
+                                                  <p class="header__cart-total__price mb-0">$12.2</p>
+                                              </div>
+                                          </div>
+                                          <div class="col-12">
+                                              <div class="header__cart-total-btn d-flex justify-content-between align-items-center">
+                                                  <a href="cart.html" class="header__cart-total-btn__btn">cart</a>
+                                                  <a href="checkout.html" class="header__cart-total-btn__btn">checkout</a>
+                                              </div>
+                                          </div>
                                       </div>
-                                  </a>
-                              </li>
+                                  </div>
+                              </div>
+                              
                               <li class="nav-item">
-                                  <a href="#" class="btn btn-success text-uppercase order-btn nav-link">Order online</a>
+                                  <a href="shop-categories.html" class="btn btn-success text-uppercase order-btn nav-link">Order online</a>
                               </li>
                             </ul>
                           </div>
                       </nav>
+                      
                   </div>
               </div>
           </div>
@@ -138,7 +272,7 @@
                   <div class="col-12">
                     <div class="cart__border-bottom">
                       <div class="cart__two-btn d-flex justify-content-between">
-                        <button class="cart__btn"> < continue shopping</button>
+                        <a href="cart.html" class="cart__btn"> < continue shopping</a>
                         <button class="cart__btn">update cart</button>
                       </div>
                     </div>
@@ -207,7 +341,7 @@
                     <div class="col-12">
                       <div class="cart__proceed-container">
                         <div class="cart__proceed-btn d-flex justify-content-end mt-4">
-                          <a href="#">Proceed to checkout > </a>
+                          <a href="checkout.html">Proceed to checkout > </a>
                         </div>
                       </div>
                     </div>
@@ -278,6 +412,10 @@
           </div>
       </div>
     </footer>
+    
+    <a href="#header" class="scroll-arrow">
+      <i class="fas fa-angle-up"></i>
+    </a>
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>

@@ -43,47 +43,33 @@ owl3.owlCarousel({
   slideTransition: 'linear',
 });
 
-// owl1 custom navigator
-// Go to the next item
-$('.chef__right').click(function() {
-  owl.trigger('next.owl.carousel');
-})
-// Go to the previous item
-$('.chef__left').click(function() {
-  // With optional speed parameter
-  // Parameters has to be in square bracket '[]'
-  owl.trigger('prev.owl.carousel', [300]);
-})
+// owl navigator
+owlNavigator('.chef__right','.chef__left',owl);
+owlNavigator('.home__right','.home__left',owl3);
 
-// owl3 custom navigator
-// Go to the next item
-$('.home__right').click(function() {
-  owl3.trigger('next.owl.carousel');
+function owlNavigator (right,left,name){
+  // Go to the next item
+$(right).click(function() {
+  name.trigger('next.owl.carousel');
 })
 // Go to the previous item
-$('.home__left').click(function() {
-  // With optional speed parameter
-  // Parameters has to be in square bracket '[]'
-  owl3.trigger('prev.owl.carousel', [300]);
+$(left).click(function() {
+  name.trigger('prev.owl.carousel', [300]);
 })
+}
 
 // header dropdown
+dropdown("#header__dropdown",".header__dropdown-content");
+dropdown("#header__cart-dropdown",".header__cart-dropdown-content");
 
-$("#header__dropdown")[0].onmouseover = function(){
-  $(".header__dropdown-content")[0].style.display = "block";
-}
-
-$("#header__dropdown")[0].onmouseout = function(){
-  $(".header__dropdown-content")[0].style.display = "none";
-}
-
-// header cart-dropdown
-$("#header__cart-dropdown")[0].onmouseover = function(){
-  $(".header__cart-dropdown-content")[0].style.display = "block";
-}
-
-$("#header__cart-dropdown")[0].onmouseout = function(){
-  $(".header__cart-dropdown-content")[0].style.display = "none";
+function dropdown(key,content){
+  $(key)[0].onmouseover = function(){
+    $(content)[0].style.display = "block";
+  }
+  
+  $(key)[0].onmouseout = function(){
+    $(content)[0].style.display = "none";
+  }
 }
 
 // menu list button
@@ -95,19 +81,32 @@ var burgers = [7, 3, 8];
 var deserts = [3, 2];
 var pizza = [1, 3, 4];
 
-for (var i = 0; i < all.length; i++) {
-  $("#menuContainer").append(`
-  <div class="col-3 d-flex flex-column align-items-center my-3 animate__animated animate__fadeIn">
-  <a href="#"><img src="img/menu-${all[i]}.png" class="menu__menu-item" alt=""></a>
-    <div class="menu__menu-item__caption text-center mt-4">
-        <h4 class="text-uppercase font-weight-lighter menu__menu-item__header">margherita pizza</h4>
-        <p class="menu__menu-item__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-        <span class="text-lightwarning">$20.50</span>
-    </div>
-  </div>
-  `);
-}
+var menuBoxArr = [all, salads , drinks , pasta, burgers , deserts, pizza];
 
+menuFill(all);
+
+$(".menu__menu-tap-item").click(function (e) {
+  removeMenuClass();
+  this.classList.add("menu__menu-tap-item_active");
+  $(".menu-container").empty();
+  
+  menuFill(menuBoxArr[e.target.id])
+});
+
+function menuFill(menuBox){
+  for (var i = 0; i < menuBox.length; i++) {
+    $("#menuContainer").append(`
+    <div class="col-3 d-flex flex-column align-items-center my-3 animate__animated animate__fadeIn">
+    <a href="#"><img src="img/menu-${menuBox[i]}.png" class="menu__menu-item" alt=""></a>
+      <div class="menu__menu-item__caption text-center mt-4">
+          <h4 class="text-uppercase font-weight-lighter menu__menu-item__header">margherita pizza</h4>
+          <p class="menu__menu-item__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <span class="text-lightwarning">$20.50</span>
+      </div>
+    </div>
+    `);
+  }
+}
 
 function removeMenuClass() {
   var menu_classlist = $(".menu__menu-tap-item");
@@ -118,40 +117,7 @@ function removeMenuClass() {
     }
     i++;
   }
-}
-
-$(".menu__menu-tap-item").click(function (e) {
-  removeMenuClass();
-  this.classList.add("menu__menu-tap-item_active");
-  $(".menu-container").empty();
-  if (e.target.id == "all") {
-    var id = all;
-  } else if (e.target.id == "salads") {
-    var id = salads;
-  } else if (e.target.id == "drinks") {
-    var id = drinks;
-  } else if (e.target.id == "pasta") {
-    var id = pasta;
-  } else if (e.target.id == "burgers") {
-    var id = burgers;
-  } else if (e.target.id == "deserts") {
-    var id = deserts;
-  } else if (e.target.id == "pizza") {
-    var id = pizza;
-  }
-  for (var i = 0; i < id.length; i++) {
-    $("#menuContainer").append(`
-    <div class="col-3 d-flex flex-column align-items-center my-3 animate__animated animate__fadeIn">
-    <a href="#"><img src="img/menu-${id[i]}.png" class="menu__menu-item" alt=""></a>
-      <div class="menu__menu-item__caption text-center mt-4">
-          <h4 class="text-uppercase font-weight-lighter menu__menu-item__header">margherita pizza</h4>
-          <p class="menu__menu-item__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-          <span class="text-lightwarning">$20.50</span>
-      </div>
-    </div>
-    `);
-  }
-});
+} 
 
 // shop detail description and review
 function opendes(evt, desname){
@@ -168,10 +134,11 @@ function opendes(evt, desname){
   }
 
   let des_name= $(`#${desname}`)[0];
-  console.log(des_name);
   des_name.style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+$("#des-para")[0].style.display = "block";
 
 // custom select js
 var x, i, j, l, ll, selElmnt, a, b, c;

@@ -769,9 +769,13 @@ html {
 .services__top-img img {
   width: 100%;
 }
-.services__bottom-img img {
+.services__bottom-img {
   margin-bottom: -120px;
+}
+
+.services__bottom-img img {
   width: 100%;
+
 }
 
 .services__caption {
@@ -2446,8 +2450,16 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 
 /* responsive */
-/* responsive nav */
+
 @media only screen and (max-width: 768px) {
+  /* responsive reuse */
+  .heading-sub{
+    font-size: 20px;
+  }
+  .title-sub{
+    font-size: 30px;
+  }
+/* responsive nav */
   .header{
     display: block;
     position: fixed;
@@ -2504,7 +2516,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     list-style: none;
   }
 
-  /* #home */
+  /* responsive home */
   .home::before{
     height: 50vh;
   }
@@ -2570,9 +2582,12 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     right: 15px;
     bottom: 140px;
   }
-  /* #services */
+  /* # responsive services */
   .services__top-img{
     margin-top: -25px;
+  }
+  .services__bottom-img{
+    margin-bottom: -40px;
   }
   .services__card{
     padding: 0 2rem;
@@ -2589,4 +2604,36 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .services__para{
     font-size: 14px;
   } 
+
+  /* responsive today-special */
+  .today-special{
+    margin: 0;
+  }
+  .today-special__pizza-img {
+    width: 130px;
+    height: 130px;
+  }
+  .today-special__caption{
+    font-size: 16px;
+    letter-spacing: .5px;
+  }
+  .viewmore-btn{
+    padding: .75rem 1.25rem;
+  }
+  /* responsive menu */
+  .menu__menu-item{
+    width: 130px;
+  }
+  .menu__menu-item__header{
+    padding: 0;
+  }
+  .menu__menu-item__description{
+    margin: 0 60px;
+  }
+  .menu__menu-item__price{
+    font-size: 18px;
+  }
+  .menu__menu-tap{
+    text-align: center;
+  }
 }

@@ -13,6 +13,8 @@ owl.owlCarousel({
   dots: false,
   autoplayTimeout: 4000,
   autoplayHoverPause: true,
+  responsiveClass:true,
+    
 });
 
 var owl2 = $("#c-review");
@@ -41,6 +43,24 @@ owl3.owlCarousel({
   autoplaySpeed: 500,
   autoplayHoverPause: true,
   slideTransition: 'linear',
+  responsive:{
+    0:{
+      items:1,
+      nav:false,
+      dots:false,
+    },
+    768:{
+        items:1,
+        nav:false,
+        dots:true,
+        autoWidth:true
+    },
+    1000:{
+        items:1,
+        nav:true,
+        loop:false
+    }
+}
 });
 
 // owl navigator
@@ -64,13 +84,25 @@ dropdown("#header__cart-dropdown",".header__cart-dropdown-content");
 
 function dropdown(key,content){
   $(key)[0].onmouseover = function(){
-    $(content)[0].style.display = "block";
+    $(content)[0].classList.add("d-md-block")
   }
   
   $(key)[0].onmouseout = function(){
-    $(content)[0].style.display = "none";
+    $(content)[0].classList.remove("d-md-block")
   }
 }
+
+$("#headerDropdownBtnSm").on("click",function(){
+  $(".header__menu-list_sm")[0].classList.toggle("d-block");
+  var menu = $(".header__dropdown-content_sm")[0];
+  console.log(menu)
+  if (menu.style.maxHeight) {
+    menu.style.maxHeight = null;
+  } else {
+    menu.style.maxHeight = menu.scrollHeight + "px";
+  } 
+})
+
 
 // menu list button
 var all , salads, drinks, pasta, burgers, deserts,pizza;

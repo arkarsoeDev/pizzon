@@ -14,8 +14,23 @@ owl.owlCarousel({
   autoplayTimeout: 4000,
   autoplayHoverPause: true,
   responsiveClass:true,
-    
-});
+  responsive:{
+    0:{
+      items:1,
+      nav:false,
+      dots:true,
+    },
+    768:{
+        items:4,
+        nav:false,
+        autoWidth:true
+    },
+    1000:{
+        items:4,
+        nav:false,
+    }
+}}
+);
 
 var owl2 = $("#c-review");
 owl2.owlCarousel({
@@ -43,6 +58,7 @@ owl3.owlCarousel({
   autoplaySpeed: 500,
   autoplayHoverPause: true,
   slideTransition: 'linear',
+  responsiveClass:true,
   responsive:{
     0:{
       items:1,

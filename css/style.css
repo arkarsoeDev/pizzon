@@ -1093,20 +1093,16 @@ html {
   background: var(--soft-dark);
 }
 
-.review-top img {
+.review-top {
   margin-top: -20px;
   width: 100%;
 }
 
-.review-bottom img {
+.review-bottom {
   margin-bottom: -50px;
   width: 100%;
 }
 
-.customer-reviews__img-box {
-  width: 180px;
-  height: 180px;
-}
 .customer-reviews__img {
   border: 5px solid var(--main);
   border-radius: 50%;
@@ -1119,7 +1115,6 @@ html {
 
 .customer-reviews__customer {
   position: relative;
-  margin: 40px;
   font-size: 18px;
   letter-spacing: var(--ls);
   font-style: italic;
@@ -1129,7 +1124,7 @@ html {
 .customer-reviews__customer::after {
   content: " ";
   position: absolute;
-  left: -15px;
+  left: -14px;
   top: 42%;
   border-top: 15px solid transparent;
   border-right: 15px solid var(--white);
@@ -2462,6 +2457,10 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     font-size: 30px;
   }
 /* responsive nav */
+  .pizza-logo{
+    width: 120px;
+    padding: .5rem;
+  }
   .header{
     display: block;
     position: fixed;
@@ -2589,7 +2588,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     margin-top: -25px;
   }
   .services__bottom-img{
-    margin-bottom: -40px;
+    margin-bottom: -30px;
   }
   .services__card{
     padding: 0 2rem;
@@ -2671,5 +2670,67 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .chef-bottom{
     margin-bottom: -40px;
   }
-  /*  */
+  /* latest-news */
+  .latest-news__title {
+    letter-spacing: .5px;
+  }
+  /* customer review responsive */
+  .customer-reviews__customer{
+    text-align: center;
+  }
+  .customer-reviews__customer::after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    top: -4%;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid var(--white);
+  }
+  .review-top{
+    margin-top: 0;
+  }
+  .review-bottom{
+    margin-bottom: 0;
+  }
+  /* about-us responsive */
+  .about-us__content{
+    text-align: center;
+  }
+  .about-us__description{
+    width: auto;
+    font-size: 14px;
+  }
+  .about-us__img-container{
+    text-align: center;
+  }
+  .about-us__img{
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  /* footer address responsive */
+  .footer__address{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .footer__address img{
+    width: 150px;
+  }
+  .footer__timetable-caption{
+    margin-left: 0;
+  }
+  .footer__timetable{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .footer__timetable td{
+    padding:0 0 1rem 0;
+  }
+
+  .footer__useful-link-ul{
+    margin:0;
+  }
+
 }

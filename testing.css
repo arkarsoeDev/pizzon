@@ -1,0 +1,270 @@
+
+/* responsive */
+@media only screen and (min-width: 767.98px) {
+     /* responsive nav */
+
+
+  
+
+  
+  .pizza-nav .nav-link {
+    padding: .5rem 0;
+  }
+  
+  .pizza-nav .nav-item {
+    padding: 0.5rem;
+    margin: 0;
+    border-top: #000 1px solid;
+  }
+  
+  .pizza-nav .nav-item:first-child {
+    border: none;
+  }
+  
+  .pizza-nav .header__dropdown {
+    height: inherit;
+  }
+  
+  .pizza-nav .header__dropdown-content_sm {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s;
+  }
+  
+  .pizza-nav .header__menu-list_sm {
+    padding: 0 1rem;
+    margin: 0;
+  }
+  
+  .pizza-nav .header__menu-list_sm .nav-item{
+    border: none;
+  }
+  
+  .pizza-nav .header__menu-list_sm ul {
+    list-style: none;
+  }
+  
+    /* responsive home */
+    .home::before{
+      height: 50vh;
+    }
+    .home__showcase-1,.home__showcase-2{
+      padding: 3rem 5px 1rem 5px;
+      margin: 0;
+      width: 100%;
+      min-height: 30px;
+      max-height: 45vh;
+    }
+    .home__showcase-3 {
+      padding: 5rem 5px 0 5px;
+      margin: 0;
+      width: 100%;
+      min-height: 30px;
+      max-height: 40vh;
+    }
+    .pizza-banner-1,.pizza-banner-2{
+      width: 150px !important;
+      margin: 0 auto;
+      padding: 1rem 0 2rem 0;
+    }
+    .pizza-banner-3{
+      width: 250px !important;
+      padding: 5rem 0 0 0;
+    }
+    .pizza-first-position {
+      width: 40px !important;
+    }
+    .home__showcase-1__text,.home__showcase-2__text{
+      text-align: center;
+    }
+    .home-big-text{
+      display: block;
+      font-size: 50px;
+      letter-spacing: .5px;
+    }
+    .home-caption-quote{
+      font-size: 10px;
+      letter-spacing: .5px;
+    }
+    .pizza-1{
+      right: 100px;
+      top: 40px;
+    }
+    .pizza-2{
+      top: 15px;
+      left: 130px;
+    }
+    .pizza-3{
+      top: 50px;
+      left: 65px;
+    }
+    .pizza-4{
+      right: 100px;
+      bottom: 40px;
+    }
+    .pizza-5{
+      right: 50px;
+      bottom: 90px;
+    }
+    .pizza-6{
+      right: 15px;
+      bottom: 140px;
+    }
+    /* # responsive services */
+    .services__top-img{
+      margin-top: -25px;
+    }
+    .services__bottom-img{
+      margin-bottom: -30px;
+    }
+    .services__card{
+      padding: 0 2rem;
+    }
+    .services__order-icon{
+      width: 80px;
+    }
+    .services__caption {
+      font-weight: bolder;
+      font-size: 22px;
+      color: var(--dark);
+      margin: 0;
+    }
+    .services__para{
+      font-size: 14px;
+    } 
+  
+    /* responsive today-special */
+    .today-special{
+      margin: 0;
+    }
+    .today-special__pizza-img {
+      width: 130px;
+      height: 130px;
+    }
+    .today-special__caption{
+      font-size: 16px;
+      letter-spacing: .5px;
+    }
+    .viewmore-btn{
+      padding: .75rem 1.25rem;
+    }
+    /* responsive menu */
+    .menu__menu-item{
+      width: 130px;
+    }
+    .menu__menu-item__header{
+      padding: 0;
+    }
+    .menu__menu-item__description{
+      margin: 0 60px;
+    }
+    .menu__menu-tap-item{
+      min-width: 80px;
+      min-height: 40px;
+    }
+    .menu__menu-item__price{
+      font-size: 18px;
+    }
+    .menu__menu-tap{
+      text-align: center;
+    }
+    /* booking responsive */
+    .booking__container{
+      margin: 0;
+      text-align: center !important;
+    }
+    .booking__phone{
+      border: 10px solid var(--main);
+      max-width: 250px;
+      font-size: 25px;
+      font-weight: bold;
+      margin: 0 auto;
+    }
+    .booking__form__title{
+      font-size: 30px;
+    }
+    .booking__book-btn{
+      padding: .5rem 1.75rem;  
+    }
+    .booking__des{
+      font-size: 14px;
+    }
+  
+    /* our-chef responsive */
+    .our-chef{
+      padding-bottom: 0;
+    }
+    .chef-bottom{
+      margin-bottom: -40px;
+    }
+    /* latest-news */
+    .latest-news__title {
+      letter-spacing: .5px;
+    }
+    /* customer review responsive */
+    .customer-reviews__customer{
+      text-align: center;
+    }
+    .customer-reviews__customer::after {
+      content: " ";
+      position: absolute;
+      left: 46%;
+      top: -4%;
+      border-top: none;
+      border-right: 15px solid transparent;
+      border-left: 15px solid transparent;
+      border-bottom: 15px solid var(--white);
+    }
+    .review-top{
+      margin-top: 0;
+    }
+    .review-bottom{
+      margin-bottom: 0;
+    }
+    /* about-us responsive */
+    .about-us__content{
+      text-align: center;
+    }
+    .about-us__description{
+      width: auto;
+      font-size: 14px;
+    }
+    .about-us__img-container{
+      text-align: center;
+    }
+    .about-us__img{
+      margin-top: 0px;
+      padding-left: 0px;
+    }
+    /* footer address responsive */
+    .footer__address{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .footer__address img{
+      width: 150px;
+    }
+    .footer__timetable-caption{
+      margin-left: 0;
+    }
+    .footer__timetable{
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .footer__timetable td{
+      padding:0 0 1rem 0;
+    }
+  
+    .footer__useful-link-ul{
+      margin:0;
+    }
+    .scroll-arrow {
+      width: 40px;
+      height: 40px;
+      right: 25px;
+      bottom: 25px;
+      line-height: 40px;
+      font-size: 30px;
+    }
+  }

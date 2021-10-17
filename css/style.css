@@ -78,6 +78,14 @@ html {
   border: 1px solid var(--main);
 }
 
+.fa-times,.fa-bars,.fa-plus,.fa-minus{
+  width: 21px;
+}
+
+.fa-times,.fa-plus,.fa-minus{
+  font-size: 21px;
+}
+
 
 /* banner */
 
@@ -331,6 +339,10 @@ html {
   background-color: var(--main);
 }
 
+.pizza-nav button:focus{
+  outline: none;
+}
+
 .pizza-nav .nav-link {
   padding: .5rem 0;
 }
@@ -338,7 +350,7 @@ html {
 .pizza-nav .navbar-collapse .nav-item {
   padding: 0.5rem;
   margin: 0;
-  border-top: #000 1px solid;
+  border-top: var(--warning) 1px solid;
 }
 
 .pizza-nav .nav-item:first-child {
@@ -352,12 +364,13 @@ html {
 }
 
 .pizza-nav .header__menu-list_sm {
-  padding: 0 1rem;
+  padding: 0;
   margin: 0;
 }
 
 .pizza-nav .header__menu-list_sm .nav-item{
-  border: none;
+  border-top: 1px solid var(--warning);
+
 }
 
 .pizza-nav .header__menu-list_sm ul {
@@ -453,7 +466,7 @@ html {
 .home__left,
 .home__right {
   position: absolute;
-  top: 50%;
+  top: 50vh;
   color: var(--main);
   font-size: 50px;
   z-index: 2000;
@@ -635,7 +648,7 @@ html {
 }
 
 .header .navbar {
-  padding: 8px 0px;
+  padding: 8px 0 ;
 }
 
 /* # home */
@@ -708,7 +721,7 @@ html {
 .pizza-banner-1,.pizza-banner-2 {
   position: relative;
   filter: drop-shadow(5px 5px 20px #000);
-  width: 150px !important;
+  max-width: 150px !important;
   margin: 0 auto;
   padding: 1rem 0 2rem 0;
 }
@@ -725,7 +738,7 @@ html {
   position: relative;
   margin: 0px auto;
   bottom: -1020px;
-  width: 100% !important;
+  max-width: 100% !important;
   padding:1rem 0 0 0;
 
 }
@@ -2551,7 +2564,22 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 
 /* responsive */
-@media only screen and (min-width: 768px)  {
+@media only screen and (min-width: 576px) {
+  /* home */
+  .home-big-text{
+    font-size: 60px;
+  }
+  .home-caption-quote{
+    letter-spacing: 3px;
+  }
+  .pizza-banner-1,.pizza-banner-2{
+    max-width: 200px !important;
+  }
+  .pizza-banner-3{
+    max-width: 500px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
   
   /* responsive reuse md */
   .heading-sub{
@@ -2571,9 +2599,6 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
 
   /* nav responsive */
-  .navbar-collapse{
-    margin: 0 -24px;
-  }
   .order-btn{
     font-size: 16px;
   }
@@ -2590,13 +2615,13 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 
   .home__left{
     left: 10px;
-    top: 25%;
+    top: 40vh;
     font-size: 32px;
   }
 
   .home__right{
     right: 10px;
-    top: 25%;
+    top: 40vh;
     font-size: 32px;
   }
 
@@ -2615,7 +2640,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
 
   .pizza-banner-1,.pizza-banner-2{
-    width: 700px !important;
+    max-width: 330px !important;
   }
 
   .pizza-banner-3{
@@ -2814,6 +2839,9 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .pizza-banner-1{
     right: -1980px;
   }
+  .pizza-banner-1,.pizza-banner-2{
+    max-width: 450px !important;
+  }
   .pizza-banner-3{
     max-width: 900px !important;
     margin-bottom: -360px;
@@ -2821,7 +2849,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   .home__left,.home__right
   {
-    top: 40%;
+    top: 50vh;
     font-size: 38px;
   }
   /* services */
@@ -2922,7 +2950,6 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   .home__left,
   .home__right {
-    top: 50%;
     font-size: 50px;
   }
   .home__showcase-1,.home__showcase-2{
@@ -2934,6 +2961,9 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   .home-caption-quote{
     font-size: 25px;
+  }
+  .pizza-banner-1,.pizza-banner-2{
+    max-width: 500px !important;
   }
   .pizza-banner-3{
     max-width: 1050px !important;
@@ -3042,11 +3072,11 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 @media only screen and (min-width: 1400px){
   .home__left{
-    top: 35%;
+    top: 50vh;
     left: 2%;
   }
   .home__right{
-    top: 35%;
+    top: 50vh;
     right: 2%;
   }
   .home__showcase-1,.home__showcase-2{
@@ -3071,7 +3101,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   /* services */
   .services__top-img{
-    margin-top: -115px;
+    margin-top: -100px;
     width: 100%;
   }
   .services__bottom-img{
@@ -3099,6 +3129,9 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 @media only screen and (min-width: 1800px) {
   .home__showcase-1,.home__showcase-2{
     padding: 100px 400px;
+  }
+  .home__left,.home__right{
+    top: 35vh;
   }
 }
 @media only screen and (min-width: 2000px) {

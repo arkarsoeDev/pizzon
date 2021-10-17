@@ -18,12 +18,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 px-0">
-                        <nav class="navbar navbar-expand-lg navbar-dark">
+                        <nav class="navbar navbar-expand-lg navbar-dark ">
                             
                             <a class="navbar-brand" href="index.html"><img src="img/footer-logo.png" class="nav-logo pizza-logo" alt=""></a>
                             <div class="extend-nav d-flex justify-content-end">
                                 <!-- nav phone icon -->
-                                <li class="nav-item d-none d-sm-block d-lg-none mr-md-3">
+                                <li class="nav-item d-none d-sm-flex d-lg-none mr-md-3 align-items-center">
                                     <a href="#" class="nav-link">
                                         <div class="d-flex align-items-center">
                                             <i class="fas fa-phone fa-lg text-lightwarning mr-2 color-switch"></i>
@@ -31,7 +31,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="nav-item d-block d-sm-none mt-1 mt-sm-0">
+                                <li class="nav-item d-block d-sm-none my-1 mt-sm-0">
                                     <a href="#" class="nav-link">
                                         <div class="d-flex align-items-center">
                                             <i class="fas fa-phone fa-lg text-lightwarning mr-2 color-switch"></i>
@@ -39,7 +39,7 @@
                                     </a>
                                 </li>
                                 <!-- nav shop icon -->
-                                <li class="nav-item d-none d-sm-block d-lg-none mr-md-3">
+                                <li class="nav-item d-none d-sm-flex d-lg-none mr-md-3 align-items-center">
                                     <a href="#" class="nav-link">
                                         <div  class="d-flex align-items-center">
                                             <i class="fas fa-shopping-bag fa-lg text-lightwarning mr-2 color-switch"></i>
@@ -47,32 +47,30 @@
                                         </div>
                                     </a>
                                 </li>  
-                                <li class="nav-item d-block d-sm-none mt-1 mt-sm-0">
+                                <li class="nav-item d-block d-sm-none my-1 mt-sm-0">
                                     <a href="#" class="nav-link">
                                         <div  class="d-flex align-items-center">
                                             <i class="fas fa-shopping-bag fa-lg text-lightwarning mr-2 color-switch"></i>
                                         </div>
                                     </a>
                                 </li> 
-                                <li class="nav-item d-block d-lg-none mr-md-3">
+                                <li class="nav-item d-block d-lg-none my-1 mr-md-3">
                                     <a href="shop-categories.html" class="btn btn-success p-2 text-uppercase order-btn nav-link">Order online</a>
                                 </li>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
+                                <button class="navbar-toggler my-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars nav-menu-icon" aria-hidden="true"></i>
                                 </button>
                             </div>
                             <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                                 <ul class="navbar-nav justify-content-end">
-                                    
-                                <!-- this header__dropdown is work with app.js -->
-                                    
-                                    
-                                    
                                     <li class="nav-item active">
                                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                                     </li>
-                                    <li class="nav-item d-lg-none d-sm-block">
-                                        <a id="headerDropdownBtnSm" class="nav-link">Menu</a>
+                                    <li class="nav-item d-lg-none d-sm-flex justify-content-between align-items-center">
+                                        <a href="menu-1.html"  class="nav-link">Menu</a>
+                                        <div id="headerDropdownBtnSm">
+                                            <i class="fas fa-plus text-white menu-expand-icon"></i>
+                                        </div>
                                     </li>
                                     <div id="headerDropdownContentSm" class="header__dropdown-content_sm d-lg-none">
                                         <div class="header__menu-list_sm">
@@ -84,6 +82,7 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <!-- this header__dropdown is work with app.js -->
                                     <div id="header__dropdown" class="header__dropdown">
                                         <li class="nav-item d-none d-lg-block">
                                             <a  class="nav-link header__dropdown" href="menu-1.html">Menu</a>

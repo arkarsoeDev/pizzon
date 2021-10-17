@@ -98,11 +98,11 @@ dropdown("#header__cart-dropdown",".header__cart-dropdown-content");
 
 function dropdown(key,content){
   $(key)[0].onmouseover = function(){
-    $(content)[0].classList.add("d-md-block")
+    $(content)[0].classList.add("d-lg-block")
   }
   
   $(key)[0].onmouseout = function(){
-    $(content)[0].classList.remove("d-md-block")
+    $(content)[0].classList.remove("d-lg-block")
   }
 }
 
@@ -184,8 +184,8 @@ function menuFill(menuBox){
     <div class="col-12 col-md-4 col-lg-3 d-flex flex-column align-items-center my-3 animate__animated animate__fadeIn">
       <a href="#"><img src="img/menu-${menuBox[i]}.png" class="menu__menu-item" alt=""></a>
     <div class="menu__menu-item__caption text-center mt-3 mt-md-4">
-      <h4 class="text-uppercase font-weight-lighter menu__menu-item__header mb-0">margherita pizza</h4>
-      <p class="menu__menu-item__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <h4 class="text-uppercase font-weight-lighter menu__menu-item__header mb-0 mb-md-3">margherita pizza</h4>
+      <p class="menu__menu-item__description mb-md-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
       <span class="text-lightwarning menu__menu-item__price">$20.50</span>
     </div>
     `);

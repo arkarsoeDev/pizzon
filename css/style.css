@@ -50,13 +50,14 @@ html {
 }
 
 .heading-sub {
+  font-size: 16px;
   color: var(--main);
   font-family: "Pacifico", cursive;
   letter-spacing: var(--ls);
 }
 
 .title-sub {
-  font-size: 4.5em;
+  font-size: 30px;
   letter-spacing: var(--ls);
 }
 
@@ -65,7 +66,7 @@ html {
   color: var(--white);
   font-weight: bold;
   text-transform: uppercase;
-  padding: 1.25em 2.5em 1.25em 2.5em;
+  padding: .75rem 1.25rem;
   transition: 0.5s;
   font-size: 15px;
   letter-spacing: 1px;
@@ -76,6 +77,7 @@ html {
   color: var(--main);
   border: 1px solid var(--main);
 }
+
 
 /* banner */
 
@@ -180,7 +182,7 @@ html {
 
 .active .pizza-banner-1 {
   animation-duration: 1.5s;
-  transform: translateX(-1000px);
+  transform: translateX(-2000px);
   transition: all 1.5s;
   transition-delay: 1s;
 }
@@ -306,13 +308,64 @@ html {
 
 /* header */
 .header {
-  position: absolute;
+  display: block;
+  position: fixed;
   top: 0;
-  z-index: 2001;
+  right: 0;
+  left: 0;
+  z-index: 2003;
+  overflow: hidden;
+}
+
+.extend-nav .nav-link p{
+  color: var(--white);
+
+}
+
+.header .navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.pizza-nav .navbar-nav {
+  background-color: var(--main);
+}
+
+.pizza-nav .nav-link {
+  padding: .5rem 0;
+}
+
+.pizza-nav .navbar-collapse .nav-item {
+  padding: 0.5rem;
+  margin: 0;
+  border-top: #000 1px solid;
+}
+
+.pizza-nav .nav-item:first-child {
+  border: none;
+}
+
+.pizza-nav .header__dropdown-content_sm {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s;
+}
+
+.pizza-nav .header__menu-list_sm {
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.pizza-nav .header__menu-list_sm .nav-item{
+  border: none;
+}
+
+.pizza-nav .header__menu-list_sm ul {
+  list-style: none;
 }
 
 .header__dropdown {
-  height: 60px;
+  height: inherit;
 }
 
 .header__dropdown-content {
@@ -391,7 +444,12 @@ html {
   text-decoration: none;
 }
 
+.pizza-logo{
+  width: 90px;
+}
+
 /* #home__showcase navigator */
+
 .home__left,
 .home__right {
   position: absolute;
@@ -557,6 +615,7 @@ html {
 }
 
 .order-btn {
+  font-size: 12px;
   border: 0;
   transition: 0.4s;
 }
@@ -572,7 +631,7 @@ html {
 
 .nav-item {
   text-transform: capitalize;
-  margin-right:1rem;
+  margin-right:.25rem;
 }
 
 .header .navbar {
@@ -591,7 +650,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50vh;
 }
 
 .home {
@@ -602,14 +661,23 @@ html {
 
 .home__showcase-1,
 .home__showcase-2 {
-  padding: 100px 100px 120px 100px;
-  min-height: 120vh;
+  padding: 3rem 5px 1rem 5px;
+  min-height: 30px;
+  max-height: 100vh;
+  margin: 0;
+  width: 100%;
   overflow: hidden;
 }
 
+.home__showcase-1__text,.home__showcase-2__text{
+  text-align: center;
+}
+
 .home__showcase-3 {
-  margin: 100px 0px 0px 0px;
-  min-height: 90vh;
+  padding: 5rem 5px 0 5px;
+  margin: 0;
+  width: 100%;
+  max-height: 100vh;
 }
 
 .home-row-fix {
@@ -617,9 +685,9 @@ html {
 }
 
 .home-big-text {
-  display: inline-block;
-  font-size: 150px;
-  letter-spacing: 3px;
+  display: block;
+  font-size: 35px;
+  letter-spacing: .5px;
 }
 
 .home__showcase-3__text .home-big-text {
@@ -632,31 +700,39 @@ html {
 
 .home-caption-quote {
   display: inline-block;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--main);
-  letter-spacing: 9px;
+  letter-spacing: .5px;
 }
 
-.pizza-banner-1 {
+.pizza-banner-1,.pizza-banner-2 {
   position: relative;
   filter: drop-shadow(5px 5px 20px #000);
-  right: -1000px;
+  width: 150px !important;
+  margin: 0 auto;
+  padding: 1rem 0 2rem 0;
 }
 
-.pizza-banner-2 {
-  position: relative;
-  filter: drop-shadow(5px 5px 20px #000);
+.pizza-banner-1{
+  right: -2000px;
+}
+.pizza-banner-2{
   left: -1000px;
 }
 
+
 .pizza-banner-3 {
   position: relative;
-  margin: 0px auto -205px auto;
-  bottom: -1000px;
+  margin: 0px auto;
+  bottom: -1020px;
+  width: 100% !important;
+  padding:1rem 0 0 0;
+
 }
 
 .pizza-first-position {
   position: absolute;
+  width: 40px !important;
 }
 
 .home-showcase-1 .pizza-first-position {
@@ -684,33 +760,29 @@ html {
 .pizza-bg-5 {
   transform: translateY(-5000px);
 }
-.pizza-1 {
-  right: -50px;
-  top: -50px;
+.pizza-1{
+  right: 100px;
+  top: 40px;
 }
-
-.pizza-2 {
-  top: -50px;
-  left: 50px;
+.pizza-2{
+  top: 15px;
+  left: 130px;
 }
-
-.pizza-3 {
-  top: 30px;
-  left: 0;
+.pizza-3{
+  top: 50px;
+  left: 65px;
 }
-
-.pizza-4 {
-  right: 220px;
-  bottom: -65px;
-}
-
-.pizza-5 {
-  right: 20px;
-  bottom: -80px;
-}
-.pizza-6 {
-  right: 0;
+.pizza-4{
+  right: 100px;
   bottom: 40px;
+}
+.pizza-5{
+  right: 50px;
+  bottom: 90px;
+}
+.pizza-6{
+  right: 15px;
+  bottom: 140px;
 }
 .pizza-7 {
   left: 160px;
@@ -762,30 +834,32 @@ html {
 }
 
 .services__top-img {
-  margin-top: -90px;
+  margin-top: -25px;
+  width: 100%;
   z-index: 1;
 }
 
-.services__top-img img {
-  width: 100%;
-}
 .services__bottom-img {
-  margin-bottom: -120px;
+  margin-bottom: -30px;
+  width: 100%;
 }
 
-.services__bottom-img img {
-  width: 100%;
-
+.services__card{
+  padding: 0 2rem;
 }
 
 .services__caption {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 22px;
   color: var(--dark);
 }
 
+.services__para{
+  font-size: 14px;
+} 
+
 .services__order-icon {
-  width: 100px;
+  width: 80px;
 }
 
 .services__order-icon:hover {
@@ -793,9 +867,10 @@ html {
 }
 
 /* #today-special */
-.today-special {
-  margin-top: 20vh;
+.today-special{
+  margin: 0;
 }
+
 .today-special__pizza-img img {
   width: 100%;
   height: 100%;
@@ -810,14 +885,16 @@ html {
 }
 
 .today-special__pizza-img {
-  width: 350px;
-  height: 350px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--dark);
 }
 
 .today-special__caption {
+  font-size: 16px;
+  letter-spacing: .5px;
   transition: 0.5s;
   color: var(--dark);
 }
@@ -839,7 +916,7 @@ html {
 
 .menu__menu-item {
   transition: 0.5s;
-  width: 200px;
+  width: 130px;
 }
 
 .menu__menu-item:hover {
@@ -851,7 +928,7 @@ html {
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: lighter;
-  padding: 0.75em 0px 0.75em 0px;
+  padding: 0;
   transition: 0.4s;
 }
 .menu__menu-item__header:hover {
@@ -864,10 +941,16 @@ html {
   font-size: 13px;
   font-weight: lighter;
   letter-spacing: 1px;
+  margin: 0 60px;
+}
+
+.menu__menu-item__price{
+  font-size: 18px;
 }
 
 .menu__menu-tap {
   background-color: var(--light-dark-2);
+  text-align: center;
 }
 
 .menu__menu-tap-item_active:hover {
@@ -879,8 +962,8 @@ html {
 .menu__menu-tap-item {
   display: inline-block;
   color: var(--white);
-  min-width: 100px;
-  min-height: 50px;
+  min-width: 80px;
+  min-height: 40px;
   padding: 0px 0px;
   font-size: 14px;
   transition: 0.5s;
@@ -919,8 +1002,8 @@ html {
 
 .booking__container {
   max-width: 380px;
-  margin-right: 140px;
-  text-align: left;
+  margin: 0;
+  text-align: center;
 }
 
 .booking__des {
@@ -934,10 +1017,12 @@ html {
 .booking__phone {
   background-color: black;
   color: white;
-  font-size: 35px;
-  border: 15px solid var(--light-warning);
+  border: 10px solid var(--main);
   transition: 0.3s;
-  max-width: 368px;
+  max-width: 250px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 auto;
 }
 
 .booking__phone:hover {
@@ -951,13 +1036,14 @@ html {
 }
 
 .booking__form__title {
+  font-size: 30px;
   letter-spacing: var(--ls);
 }
 
 .booking__book-btn {
   background-color: var(--dark);
   color: #ffffff;
-  padding: 1rem 2rem;
+  padding: .5rem 1.75rem; 
   transition: 0.3s;
   letter-spacing: var(--ls);
   font-weight: bold;
@@ -998,7 +1084,7 @@ html {
   background-color: #121619;
   z-index: 1;
   position: relative;
-  padding-bottom: 110px;
+  padding-bottom: 0;
 }
 
 .card-body {
@@ -1014,7 +1100,7 @@ html {
 }
 
 .chef-bottom {
-  margin-bottom: -280px;
+  margin-bottom: -40px;
 }
 
 .our-chef__chef-name {
@@ -1046,11 +1132,11 @@ html {
 .latest-news__date {
   position: absolute;
   bottom: -27px;
-  right: 48px;
+  right: 28px;
   background-color: var(--main);
   color: var(--white);
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   text-align: center;
   text-transform: uppercase;
@@ -1061,16 +1147,16 @@ html {
 .latest-news__date-container {
   position: absolute;
   bottom: -30px;
-  right: 45px;
-  width: 76px;
-  height: 76px;
+  right: 25px;
+  width: 66px;
+  height: 66px;
   border-radius: 50%;
   background-color: var(--main-transparent);
 }
 
 .latest-news__title {
   color: var(--dark);
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   transition: 0.4s;
   font-size: 18px;
 }
@@ -1094,7 +1180,7 @@ html {
 }
 
 .review-top {
-  margin-top: -20px;
+  margin-top: 0;
   width: 100%;
 }
 
@@ -1119,17 +1205,19 @@ html {
   letter-spacing: var(--ls);
   font-style: italic;
   font-weight: bold;
+  text-align: center;
 }
+
 
 .customer-reviews__customer::after {
   content: " ";
   position: absolute;
-  left: -14px;
-  top: 42%;
-  border-top: 15px solid transparent;
-  border-right: 15px solid var(--white);
-  border-left: none;
-  border-bottom: 15px solid transparent;
+  left: 46%;
+  top: -4%;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid var(--white);
 }
 
 .customer-reviews__customer__text {
@@ -1151,15 +1239,21 @@ html {
 .about-us {
   height: 30%;
 }
+.about-us__content{
+  text-align: center;
+}
 .about-us__description {
-  width: 80%;
-  font-size: 15px;
+  width: auto;
+  font-size: 14px;
   letter-spacing: var(--ls);
 }
 
+.about-us__img-container{
+  text-align: center;
+}
+
 .about-us__img {
-  margin-top: -105px;
-  padding-left: 45px;
+  padding-left: 0px;
   width: 65%;
 }
 
@@ -1183,23 +1277,30 @@ html {
 }
 
 .footer__address {
-  max-width: 280px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-.footer__timetable {
-  width: 90%;
-  margin-top: 30px;
-  letter-spacing: 1.5px;
+.footer__address img{
+  width: 150px;
 }
 
-.footer__timetable-caption {
-  margin-left: 0.75rem;
+.footer__timetable{
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
   letter-spacing: 1.5px;
 }
 
 .footer__timetable td {
+  padding:0 0 1rem 0;
   border-top: none !important;
   color: white;
+}
+
+.footer__timetable-caption {
+  margin-left: 0;
+  letter-spacing: 1.5px;
 }
 
 .footer__email:hover {
@@ -1217,7 +1318,7 @@ html {
 
 .footer__useful-link-ul {
   list-style: none;
-  margin-top: 40px;
+  margin:0;
   letter-spacing: 1.5px;
 }
 
@@ -2429,16 +2530,19 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 .scroll-arrow {
   position: fixed;
   color: var(--white);
-  font-size: 2rem;
+  font-size: 30px;
   width: 50px;
   background-color: #fbf321;
   border-radius: 100%;
   text-align: center;
-  bottom: 50px;
-  right: 50px;
+  width: 40px;
+  height: 40px;
+  right: 25px;
+  bottom: 25px;
   z-index: 2002;
   text-decoration: none;
   transition: 0.4s;
+  line-height: 40px;
 }
 
 .scroll-arrow:hover {
@@ -2447,300 +2551,6 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 
 /* responsive */
-@media only screen and (max-width: 767.98px) {
-  /* responsive reuse */
-  .heading-sub{
-    font-size: 16px;
-  }
-  .title-sub{
-    font-size: 30px;
-  }
-
-   /* responsive nav */
-.pizza-logo{
-  width: 120px;
-  padding: .5rem;
-}
-.header{
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2003;
-  overflow: hidden;
-}
-
-.header .navbar {
-  margin: 0;
-  padding: 0;
-}
-
-.pizza-nav .navbar-nav {
-  background-color: var(--main);
-}
-
-.pizza-nav .nav-link {
-  padding: .5rem 0;
-}
-
-.pizza-nav .nav-item {
-  padding: 0.5rem;
-  margin: 0;
-  border-top: #000 1px solid;
-}
-
-.pizza-nav .nav-item:first-child {
-  border: none;
-}
-
-.pizza-nav .header__dropdown {
-  height: inherit;
-}
-
-.pizza-nav .header__dropdown-content_sm {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.3s;
-}
-
-.pizza-nav .header__menu-list_sm {
-  padding: 0 1rem;
-  margin: 0;
-}
-
-.pizza-nav .header__menu-list_sm .nav-item{
-  border: none;
-}
-
-.pizza-nav .header__menu-list_sm ul {
-  list-style: none;
-}
-
-  /* responsive home */
-  .home::before{
-    height: 50vh;
-  }
-  .home__showcase-1,.home__showcase-2{
-    padding: 3rem 5px 1rem 5px;
-    margin: 0;
-    width: 100%;
-    min-height: 30px;
-    max-height: 45vh;
-  }
-  .home__showcase-3 {
-    padding: 5rem 5px 0 5px;
-    margin: 0;
-    width: 100%;
-    min-height: 30px;
-    max-height: 40vh;
-  }
-  .pizza-banner-1,.pizza-banner-2{
-    width: 150px !important;
-    margin: 0 auto;
-    padding: 1rem 0 2rem 0;
-  }
-  .pizza-banner-3{
-    width: 250px !important;
-    padding: 5rem 0 0 0;
-  }
-  .pizza-first-position {
-    width: 40px !important;
-  }
-  .home__showcase-1__text,.home__showcase-2__text{
-    text-align: center;
-  }
-  .home-big-text{
-    display: block;
-    font-size: 50px;
-    letter-spacing: .5px;
-  }
-  .home-caption-quote{
-    font-size: 10px;
-    letter-spacing: .5px;
-  }
-  .pizza-1{
-    right: 100px;
-    top: 40px;
-  }
-  .pizza-2{
-    top: 15px;
-    left: 130px;
-  }
-  .pizza-3{
-    top: 50px;
-    left: 65px;
-  }
-  .pizza-4{
-    right: 100px;
-    bottom: 40px;
-  }
-  .pizza-5{
-    right: 50px;
-    bottom: 90px;
-  }
-  .pizza-6{
-    right: 15px;
-    bottom: 140px;
-  }
-  /* # responsive services */
-  .services__top-img{
-    margin-top: -25px;
-  }
-  .services__bottom-img{
-    margin-bottom: -30px;
-  }
-  .services__card{
-    padding: 0 2rem;
-  }
-  .services__order-icon{
-    width: 80px;
-  }
-  .services__caption {
-    font-weight: bolder;
-    font-size: 22px;
-    color: var(--dark);
-    margin: 0;
-  }
-  .services__para{
-    font-size: 14px;
-  } 
-
-  /* responsive today-special */
-  .today-special{
-    margin: 0;
-  }
-  .today-special__pizza-img {
-    width: 130px;
-    height: 130px;
-  }
-  .today-special__caption{
-    font-size: 16px;
-    letter-spacing: .5px;
-  }
-  .viewmore-btn{
-    padding: .75rem 1.25rem;
-  }
-  /* responsive menu */
-  .menu__menu-item{
-    width: 130px;
-  }
-  .menu__menu-item__header{
-    padding: 0;
-  }
-  .menu__menu-item__description{
-    margin: 0 60px;
-  }
-  .menu__menu-tap-item{
-    min-width: 80px;
-    min-height: 40px;
-  }
-  .menu__menu-item__price{
-    font-size: 18px;
-  }
-  .menu__menu-tap{
-    text-align: center;
-  }
-  /* booking responsive */
-  .booking__container{
-    margin: 0;
-    text-align: center !important;
-  }
-  .booking__phone{
-    border: 10px solid var(--main);
-    max-width: 250px;
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0 auto;
-  }
-  .booking__form__title{
-    font-size: 30px;
-  }
-  .booking__book-btn{
-    padding: .5rem 1.75rem;  
-  }
-  .booking__des{
-    font-size: 14px;
-  }
-
-  /* our-chef responsive */
-  .our-chef{
-    padding-bottom: 0;
-  }
-  .chef-bottom{
-    margin-bottom: -40px;
-  }
-  /* latest-news */
-  .latest-news__title {
-    letter-spacing: .5px;
-  }
-  /* customer review responsive */
-  .customer-reviews__customer{
-    text-align: center;
-  }
-  .customer-reviews__customer::after {
-    content: " ";
-    position: absolute;
-    left: 46%;
-    top: -4%;
-    border-top: none;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-bottom: 15px solid var(--white);
-  }
-  .review-top{
-    margin-top: 0;
-  }
-  .review-bottom{
-    margin-bottom: 0;
-  }
-  /* about-us responsive */
-  .about-us__content{
-    text-align: center;
-  }
-  .about-us__description{
-    width: auto;
-    font-size: 14px;
-  }
-  .about-us__img-container{
-    text-align: center;
-  }
-  .about-us__img{
-    margin-top: 0px;
-    padding-left: 0px;
-  }
-  /* footer address responsive */
-  .footer__address{
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  .footer__address img{
-    width: 150px;
-  }
-  .footer__timetable-caption{
-    margin-left: 0;
-  }
-  .footer__timetable{
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
-  }
-  .footer__timetable td{
-    padding:0 0 1rem 0;
-  }
-
-  .footer__useful-link-ul{
-    margin:0;
-  }
-  .scroll-arrow {
-    width: 40px;
-    height: 40px;
-    right: 25px;
-    bottom: 25px;
-    line-height: 40px;
-    font-size: 30px;
-  }
-}
 @media only screen and (min-width: 768px)  {
   
   /* responsive reuse md */
@@ -2759,6 +2569,14 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     max-width: 320px;
     display: block;
   }
+
+  /* nav responsive */
+  .navbar-collapse{
+    margin: 0 -24px;
+  }
+  .order-btn{
+    font-size: 16px;
+  }
   
   /* home */
   
@@ -2767,7 +2585,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
 
   .home-caption-quote{
-    font-size: 18px;
+    letter-spacing: 9px;
   }
 
   .home__left{
@@ -2785,6 +2603,8 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .home__showcase-1,.home__showcase-2{
     padding: 100px 50px;
     min-height: auto;
+    max-height: 120vh;
+    overflow: hidden;
   }
 
   .home__showcase-3{
@@ -2794,12 +2614,24 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     min-height: 50vh;
   }
 
+  .pizza-banner-1,.pizza-banner-2{
+    width: 700px !important;
+  }
+
   .pizza-banner-3{
     max-width: 700px !important;
-    margin-bottom: -45px;
+    margin-bottom: 15px;
+  }
+
+  .home__showcase-1__text,.home__showcase-2__text{
+    text-align: left;
   }
 
   /* services responsive   */
+  .services__card{
+    padding: 0 .5rem;
+  }
+
   .services__top-img{
     margin-top: -50px;
     z-index: 1;
@@ -2808,8 +2640,10 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     margin-bottom: -50px;
   }
   .services__caption{
+    font-weight: bolder;
     font-size: 25px;
-    margin-bottom: 0;
+    color: var(--dark);
+    margin: 0;
   }
   /* today special */
   .today-special{
@@ -2833,9 +2667,13 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .menu__menu-item{
     width: 150px;
   }
+  .menu__menu-item__description{
+    margin:0;
+  }
   /* booking responsive */
   .booking__container{
     margin-right: 0;
+    text-align: left;
   }
   .booking__phone{
     font-size: 25px;
@@ -2843,6 +2681,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     border: 10px solid var(--main);
     letter-spacing: var(--ls);
     font-weight: bold;
+    margin: 0;
   }
   .booking__book-btn{
     padding: .5rem 2rem;
@@ -2851,6 +2690,9 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .chef__left,.chef__right{
     font-size: 30px;
     top: 40%;
+  }
+  .chef-bottom{
+    margin-bottom: -85px;
   }
   /* latest news responsive */
   .latest-news__date-container{
@@ -2869,6 +2711,16 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     font-size: 17px;
   }
   /* customer-review */
+  .customer-reviews__customer::after {
+    content: " ";
+    position: absolute;
+    left: -14px;
+    top: 42%;
+    border-top: 15px solid transparent;
+    border-right: 15px solid var(--white);
+    border-left: none;
+    border-bottom: 15px solid transparent;
+  }
   .customer-reviews__img{
     width: 100px !important;
   }
@@ -2878,13 +2730,18 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .review-bottom{
     margin-bottom: -30px;
   }
+
   /* about-us */
+  .about-us__content{
+    text-align: left;
+  }
   .about-us__description{
     width: 100%;
   }
   .about-us__img{
     width: 90%;
     padding-left: 0;
+    margin-top: -120px;
   }
   /* footer responsive */
   .footer__address{
@@ -2921,7 +2778,30 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .title-sub{
     font-size: 60px;
   }
+  /* header */
+  .header{
+    position: absolute;
+    top: 0;
+    z-index: 2001;
+    overflow:visible;
+  }
+  .header__dropdown{
+    height: 60px;
+  }
+  /* nav responsive */
+  .header .navbar{
+    padding: .5rem 1rem;
+  }
+  .pizza-nav .navbar-nav{
+    background-color: transparent;
+    width: 120%;
+  }
+  
+
   /* home*/
+  .home::before{
+    height: 120%;
+  }
   .home-big-text{
     font-size: 120px;
   }
@@ -2931,13 +2811,22 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .home__showcase-1,.home__showcase-2{
     min-height: auto;
   }
+  .pizza-banner-1{
+    right: -1980px;
+  }
   .pizza-banner-3{
     max-width: 900px !important;
-    margin-bottom: -330px;
+    margin-bottom: -360px;
+    padding: 0;
   }
   .home__left,.home__right
   {
     top: 40%;
+    font-size: 38px;
+  }
+  /* services */
+  .services__top-img{
+    margin-top: -70px;
   }
   /* today special */
   .today-special__pizza-img{
@@ -2949,16 +2838,49 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   /* menu */
   .menu__menu-item{
-    width: 200px;
+    width: 180px;
+  }
+  .menu__menu-tap-item{
+    min-width: 90px;
   }
   /* booking */
   .booking__phone{
-    font-size:30px;
-    max-width: 320px;
+    font-size:35px;
+    min-width: 350px;
+    min-height: 100px;
+  }
+  .booking__book-btn{
+    padding: 1rem 2.5rem;
+  }
+  /* our chef */
+  .chef__left,.chef__right{
+    font-size: 38px;
+  }
+  .chef-bottom{
+    margin-bottom: -104px;
+  }
+  /* latest news */
+  .latest-news__date-container{
+    bottom: -30px;
+    right: 45px;
+    width: 76px;
+    height: 76px;
+  }
+  .latest-news__date{
+    bottom: -27px;
+    right: 48px;
+    width: 70px;
+    height: 70px;
+  }
+  .latest-news__title{
+    font-size: 18px;
   }
   /* customer review */
   .customer-reviews__img{
     width: 120px !important;
+  }
+  .customer-reviews__customer{
+    text-align: left;
   }
   /* about us */
   .about-us__img{
@@ -2983,15 +2905,21 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   /* reuse */
   .heading-sub{
-    font-size: 35px;
+    font-size: 27px;
   }
   .title-sub{
-    font-size: 70px;
+    font-size: 75px;
   }
   .viewmore-btn{
-    padding: 1.25em 2.5em 1.25em 2.5em;
+    padding: 1.25em 2.75em;
+  }
+  .pizza-logo{
+    width: 180px;
   }
   /* home */
+  .home::before{
+    height: 150%;
+  }
   .home__left,
   .home__right {
     top: 50%;
@@ -2999,6 +2927,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   .home__showcase-1,.home__showcase-2{
     padding: 100px;
+    margin-bottom: 50px;
   }
   .home-big-text{
     font-size: 150px;
@@ -3008,7 +2937,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   .pizza-banner-3{
     max-width: 1050px !important;
-    margin-bottom: -205px;
+    bottom: -1000px;
   }
   .active .pizza-banner-3 {
     transform: translateY(-950px);
@@ -3033,6 +2962,18 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .services__top-img{
     margin-top: -80px;
   }
+  .services__bottom-img{
+    margin-bottom: -90px;
+  }
+  .services__order-icon{
+    width: 100px;
+  }
+  .services__para{
+    font-size: 16px;
+  }
+  .services__caption{
+    font-size: 30px;
+  }
   /* menu */
   .menu__menu-tap-item{
     min-width: 100px;
@@ -3044,23 +2985,26 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     height: 350px;
   }
   .today-special__caption{
-    font-size: 28px;
+    font-size: 25px;
   }
   /* booking */
   .booking__container{
-    margin-right: 140px;
+    max-width: fit-content;
   }
   .booking__phone{
     max-width: 368px;
     font-size: 35px;
   }
   .booking__book-btn{
-    padding: .75rem 2rem;
+    padding: 1rem 2.5rem;
   }
   /* our chef */
   .chef__left,.chef__right{
     top: 130px;
     font-size: 50px;
+  }
+  .chef-bottom{
+    margin-bottom: -174px;
   }
   /* customer review */
   .customer-reviews__img{
@@ -3082,6 +3026,15 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .latest-news__title{
     font-size: 18px;
   }
+  /* customer review */
+  .review-top{
+    margin-top: -10px;
+  }
+  /* about-us */
+  .about-us__img{
+    width: 65%;
+    margin-top: -150px;
+  }
   /* footer */
   .footer__address img{
     width: auto;
@@ -3097,13 +3050,11 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     right: 2%;
   }
   .home__showcase-1,.home__showcase-2{
-    padding: 100px 400px 150px;
+    padding: 100px 100px 50px 100px;
   }
-  .pizza-banner-1{
-    right: -1010px;
-  }
+  
   .active .pizza-banner-3 {
-    transform: translateY(-920px);
+    transform: translateY(-1020px);
   }
 
   .pizza-bg-3{
@@ -3137,5 +3088,21 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   .chef-bottom{
     width: 100%;
+    margin-bottom: -235px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .home__showcase-1,.home__showcase-2{
+    padding: 100px 300px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .home__showcase-1,.home__showcase-2{
+    padding: 100px 400px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .home__showcase-1, .home__showcase-2{
+    padding: 100px 700px;
   }
 }

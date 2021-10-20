@@ -13,110 +13,17 @@
   </head>
   <body>
 
-    <header id="header" class="container-fluid header">
+    <header class="container-fluid pizza-nav header bg-warning">
         <div class="row">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pizza-nav">
-                            <a class="navbar-brand" href="index.html"><img src="img/footer-logo.png" class="nav-logo" alt=""></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
-                          
-                            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-                              <ul class="navbar-nav">
-                                <li class="nav-item mr-3 active">
-                                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <!-- this header__dropdown is work with app.js -->
-                                <div id="header__dropdown" class="header__dropdown">
-                                    <li class="nav-item mr-3">
-                                        <a class="nav-link" href="menu-1.html">Menu</a>
-                                    </li>
-                                    <div class="header__dropdown-content">
-                                        <div class="row">
-                                            <div class="col-9">
-                                                <div class="header__menu-item-container">
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <a href="shop-detail.html" class="header__menu-item">
-                                                                <img src="img/1.png" class="header__menu-item__img" alt="">
-                                                                <div class="header__menu-item__des">
-                                                                    <p class="header__menu-item__name">pepproni</p>
-                                                                    <span class="header__menu-item__price">$12.22</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="shop-detail.html" class="header__menu-item">
-                                                                <img src="img/1.png" class="header__menu-item__img" alt="">
-                                                                <div class="header__menu-item__des">
-                                                                    <p class="header__menu-item__name">pepproni</p>
-                                                                    <span class="header__menu-item__price">$12.22</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="shop-detail.html" class="header__menu-item">
-                                                                <img src="img/1.png" class="header__menu-item__img" alt="">
-                                                                <div class="header__menu-item__des">
-                                                                    <p class="header__menu-item__name">pepproni</p>
-                                                                    <span class="header__menu-item__price">$12.22</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="shop-detail.html" class="header__menu-item">
-                                                                <img src="img/1.png" class="header__menu-item__img" alt="">
-                                                                <div class="header__menu-item__des">
-                                                                    <p class="header__menu-item__name">pepproni</p>
-                                                                    <span class="header__menu-item__price">$12.22</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="shop-detail.html" class="header__menu-item">
-                                                                <img src="img/1.png" class="header__menu-item__img" alt="">
-                                                                <div class="header__menu-item__des">
-                                                                    <p class="header__menu-item__name">pepproni</p>
-                                                                    <span class="header__menu-item__price">$12.22</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="shop-detail.html" class="header__menu-item">
-                                                                <img src="img/1.png" class="header__menu-item__img" alt="">
-                                                                <div class="header__menu-item__des">
-                                                                    <p class="header__menu-item__name">pepproni</p>
-                                                                    <span class="header__menu-item__price">$12.22</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="header__menu-list">
-                                                    <ul>
-                                                        <li><a href="#">menu list</a></li>
-                                                        <li><a href="#">menu grid</a></li>
-                                                        <li><a href="#">special pizza</a></li>
-                                                        <li><a href="#">all typ</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li class="nav-item mr-3">
-                                    <a class="nav-link" href="blog.html">blog</a>
-                                </li>
-                                <li class="nav-item mr-3">
-                                    <a class="nav-link" href="reservation.html">reservation</a>
-                                </li>
-
-                                <li class="nav-item mr-3">
+                    <div class="col-12 px-0">
+                        <nav class="navbar navbar-expand-lg navbar-dark ">
+                            
+                            <a class="navbar-brand" href="index.html"><img src="img/footer-logo.png" class="nav-logo pizza-logo" alt=""></a>
+                            <div class="extend-nav d-flex justify-content-end">
+                                <!-- nav phone icon -->
+                                <li class="nav-item d-none d-sm-flex d-lg-none mr-md-3 align-items-center">
                                     <a href="#" class="nav-link">
                                         <div class="d-flex align-items-center">
                                             <i class="fas fa-phone fa-lg text-lightwarning mr-2 color-switch"></i>
@@ -124,10 +31,155 @@
                                         </div>
                                     </a>
                                 </li>
+                                <li class="nav-item d-block d-sm-none my-1 mt-sm-0">
+                                    <a href="#" class="nav-link">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-phone fa-lg text-lightwarning mr-2 color-switch"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- nav shop icon -->
+                                <li class="nav-item d-none d-sm-flex d-lg-none mr-md-3 align-items-center">
+                                    <a href="#" class="nav-link">
+                                        <div  class="d-flex align-items-center">
+                                            <i class="fas fa-shopping-bag fa-lg text-lightwarning mr-2 color-switch"></i>
+                                            <p class="mb-0"><span>0</span> items - $ <span>0.00</span></p>
+                                        </div>
+                                    </a>
+                                </li>  
+                                <li class="nav-item d-block d-sm-none my-1 mt-sm-0">
+                                    <a href="#" class="nav-link">
+                                        <div  class="d-flex align-items-center">
+                                            <i class="fas fa-shopping-bag fa-lg text-lightwarning mr-2 color-switch"></i>
+                                        </div>
+                                    </a>
+                                </li> 
+                                <li class="nav-item d-block d-lg-none my-1 mr-md-3">
+                                    <a href="shop-categories.html" class="btn btn-success p-2 text-uppercase order-btn nav-link">Order online</a>
+                                </li>
+                                <button class="navbar-toggler my-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars nav-menu-icon" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                                <ul class="navbar-nav justify-content-end">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item d-lg-none d-flex justify-content-between align-items-center">
+                                        <a href="menu-1.html"  class="nav-link">Menu</a>
+                                        <div id="headerDropdownBtnSm">
+                                            <i class="fas fa-plus text-white menu-expand-icon"></i>
+                                        </div>
+                                    </li>
+                                    <div id="headerDropdownContentSm" class="header__dropdown-content_sm d-lg-none">
+                                        <div class="header__menu-list_sm">
+                                            <ul>
+                                                <li class="nav-item"><a href="#" class="nav-link">menu list</a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link">menu grid</a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link">special pizza</a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link">all typ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- this header__dropdown is work with app.js -->
+                                    <div id="header__dropdown" class="header__dropdown">
+                                        <li class="nav-item d-none d-lg-block">
+                                            <a  class="nav-link header__dropdown" href="menu-1.html">Menu</a>
+                                        </li>
+                                        <div class="header__dropdown-content d-none">
+                                            <div class="row">
+                                                <div class="col-9">
+                                                    <div class="header__menu-item-container">
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <a href="shop-detail.html" class="header__menu-item">
+                                                                    <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                                    <div class="header__menu-item__des">
+                                                                        <p class="header__menu-item__name">pepproni</p>
+                                                                        <span class="header__menu-item__price">$12.22</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <a href="shop-detail.html" class="header__menu-item">
+                                                                    <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                                    <div class="header__menu-item__des">
+                                                                        <p class="header__menu-item__name">pepproni</p>
+                                                                        <span class="header__menu-item__price">$12.22</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <a href="shop-detail.html" class="header__menu-item">
+                                                                    <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                                    <div class="header__menu-item__des">
+                                                                        <p class="header__menu-item__name">pepproni</p>
+                                                                        <span class="header__menu-item__price">$12.22</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <a href="shop-detail.html" class="header__menu-item">
+                                                                    <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                                    <div class="header__menu-item__des">
+                                                                        <p class="header__menu-item__name">pepproni</p>
+                                                                        <span class="header__menu-item__price">$12.22</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <a href="shop-detail.html" class="header__menu-item">
+                                                                    <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                                    <div class="header__menu-item__des">
+                                                                        <p class="header__menu-item__name">pepproni</p>
+                                                                        <span class="header__menu-item__price">$12.22</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <a href="shop-detail.html" class="header__menu-item">
+                                                                    <img src="img/1.png" class="header__menu-item__img" alt="">
+                                                                    <div class="header__menu-item__des">
+                                                                        <p class="header__menu-item__name">pepproni</p>
+                                                                        <span class="header__menu-item__price">$12.22</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="header__menu-list">
+                                                        <ul>
+                                                            <li><a href="#">menu list</a></li>
+                                                            <li><a href="#">menu grid</a></li>
+                                                            <li><a href="#">special pizza</a></li>
+                                                            <li><a href="#">all typ</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog.html">blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="reservation.html">reservation</a>
+                                    </li>
+                                    <li class="nav-item d-lg-block d-none">
+                                        <a href="#" class="nav-link">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-phone fa-lg text-lightwarning mr-2 color-switch"></i>
+                                                <p class="mb-0">+ 09 123 456 789</p>
+                                            </div>
+                                        </a>
+                                    </li>
                                 
                                 <!-- this part is work with app.js -->
-                                <div id="header__cart-dropdown" class="header__cart-dropdown mr-3">
-                                    <li class="nav-item">
+                                <div id="header__cart-dropdown" class="header__cart-dropdown d-none d-lg-block">
+                                    <li class="nav-item d-lg-block d-none">
                                         <a href="#" class="nav-link">
                                             <div  class="d-flex align-items-center">
                                                 <i class="fas fa-shopping-bag fa-lg text-lightwarning mr-2 color-switch"></i>
@@ -151,7 +203,7 @@
                                                                 <input type="number" class="header__cart-item__qty-box" value="1">
                                                             </div>
                                                         </div>
-                                                        <a class="header__cart-item__cross-btn">
+                                                        <a class="header__cart-item__cross-btn d-flex align-items-center">
                                                             <i class="fa fa-times fa-sm" aria-hidden="true"></i>
                                                         </a>
                                                     </div>
@@ -167,7 +219,7 @@
                                                                 <input type="number" class="header__cart-item__qty-box" value="1">
                                                             </div>
                                                         </div>
-                                                        <a class="header__cart-item__cross-btn">
+                                                        <a class="header__cart-item__cross-btn d-flex align-items-center">
                                                             <i class="fa fa-times fa-sm" aria-hidden="true"></i>
                                                         </a>
                                                     </div>
@@ -189,51 +241,53 @@
                                     </div>
                                 </div>
                                 
-                                <li class="nav-item">
-                                    <a href="shop-categories.html" class="btn btn-success text-uppercase order-btn nav-link">Order online</a>
-                                </li>
-                              </ul>
+                                    <li class="nav-item d-none d-lg-block">
+                                        <a href="shop-categories.html" class="btn btn-success text-uppercase order-btn nav-link">Order online</a>
+                                    </li>
+                                </ul>
                             </div>
                         </nav>
-                        
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="banner-bg about-banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="banner-title text-center">
-              <h1 class="banner-heading">about us</h1>
-              <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About us</li>
-              </ol>
+    <section id="banner" class="banner-bg about-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="banner-title text-center">
+                <p class="banner-heading">Blog Detail</p>
+                <ol class="breadcrumb justify-content-center">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Blog Detail</li>
+                </ol>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <section class="about-section container-fluid">
       <div class="row">
           <div class="container">
-              <div class="row my-5 py-5 d-flex align-items-center">
-                  <div class="col-6">
-                      <img src="img/about/about-1.jpg" class="about-section__img" alt="">
+              <div class="row my-lg-5 py-md-5 py-4 d-flex align-items-center">
+                  <div class="col-12 col-md-6">
+                      <img src="img/about/about-1.jpg" class="about-section__img mb-3" alt="">
                   </div>
-                  <div class="col-6">
-                      <div class="text-left mb-4">
-                          <h3 class="text-capitalize text-lightwarning mb-0 heading-sub">Delicious Restaurant</h3>
-                          <h1 class="font-weight-bold big-text mb-0 title-sub">ABOUT PIZZON</h1>
-                      </div>
-                      <div>
-                          <p>
-                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio praesentium perspiciatis aut et molestias iusto cum modi consequuntur illum. Molestias voluptate non in voluptas modi facilis eos. Esse, nostrum debitis.
-                          </p>
+                  <div class="col-12 col-md-6">
+                      <div class="text-center text-md-left">
+                        <div class="mb-3">
+                            <h3 class="text-capitalize text-lightwarning mb-0 heading-sub">Delicious Restaurant</h3>
+                            <h1 class="font-weight-bold big-text mb-0 title-sub">ABOUT PIZZON</h1>
+                        </div>
+                        <div>
+                            <p class="about__para">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio praesentium perspiciatis aut et molestias iusto cum modi consequuntur illum. Molestias voluptate non in voluptas modi facilis eos. Esse, nostrum debitis.
+                            </p>
+                        </div>
                       </div>
                   </div>
               </div>
@@ -244,7 +298,7 @@
     <section class="our-story container-fluid">
       <div class="row">
         <div class="container">
-          <div class="row my-5 py-5">
+          <div class="row my-lg-5 py-md-5 py-4">
             <div class="col-12">
               <div class="text-center mb-4">
                 <h3 class="text-capitalize text-lightwarning mb-0 heading-sub">Discover</h3>
@@ -265,19 +319,21 @@
     <section class="experience container-fluid">
         <div class="row">
             <div class="container">
-                <div class="row my-5 py-5 d-flex align-items-center">
-                    <div class="col-6">
-                        <img src="img/about/about-2.jpg" class="experience__bg" alt="">
+                <div class="row my-lg-5 py-4 py-md-5 d-flex align-items-center">
+                    <div class="col-12 col-md-6">
+                        <img src="img/about/about-2.jpg" class="experience__bg mb-3" alt="">
                     </div>
-                    <div class="col-6">
-                        <div class="text-left mb-4">
-                            <h3 class="text-capitalize text-lightwarning mb-0 heading-sub">Modern Cuisine</h3>
-                            <h1 class="font-weight-bold big-text mb-0 title-sub">experience</h1>
-                        </div>
-                        <div>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio praesentium perspiciatis aut et molestias iusto cum modi consequuntur illum. Molestias voluptate non in voluptas modi facilis eos. Esse, nostrum debitis.
-                            </p>
+                    <div class="col-12 col-md-6">
+                        <div class="text-center text-md-left">
+                            <div class="mb-3">
+                                <h3 class="text-capitalize text-lightwarning mb-0 heading-sub">Modern Cuisine</h3>
+                                <h1 class="font-weight-bold big-text mb-0 title-sub">experience</h1>
+                            </div>
+                            <div>
+                                <p class="about__para">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio praesentium perspiciatis aut et molestias iusto cum modi consequuntur illum. Molestias voluptate non in voluptas modi facilis eos. Esse, nostrum debitis.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,98 +342,110 @@
     </section>
 
     <section class="customer-review container-fluid">
-      <div class="row">
-          <div class="review-top">
-              <img src="img/review-top-bg.png" class="w-100" alt="">
-          </div>
-          <div class="container">
-              <div class="my-5">
-                  <div class="row">
-                      <div class="col-12">
-                          <div class="text-center mb-4">
-                              <h3 class="text-capitalize text-lightwarning mb-0 heading-sub">What say our clients</h3>
-                              <h1 class="font-weight-bold big-text text-white mb-0 title-sub">customer reviews</h1>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-12">
-                          <div id="c-review" class="owl-carousel">
-                              <div>
-                                  <div class="customer-reviews__card d-flex align-items-center">
-                                      <div class="customer-reviews__img-box d-flex flex-column align-items-center mr-3">
-                                          <img src="img/customer-1.png" class="customer-reviews__img" alt="">
-                                          <p class="customer-reviews__img-caption text-uppercase mt-3">John doe</p>
-                                      </div>
-                                      <div class="customer-reviews__customer w-100 bg-white p-5">
-                                          <p class="customer-reviews__customer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sint dolorem! Mollitia vero perspiciatis vitae officiis odio, quia voluptate eaque, in blanditiis quasi nisi delectus quo suscipit corrupti. Placeat, natus.</p>
-                                          <p class="customer-reviews__customer__name text-uppercase mb-0">John doe - <span class="customer-reviews__customer__job">designer</span></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="customer-reviews__card d-flex align-items-center">
-                                      <div class="customer-reviews__img-box d-flex flex-column align-items-center mr-3">
-                                          <img src="img/customer-1.png" class="customer-reviews__img" alt="">
-                                          <p class="customer-reviews__img-caption text-uppercase mt-3">John doe</p>
-                                      </div>
-                                      <div class="customer-reviews__customer w-100 bg-white p-5">
-                                          <p class="customer-reviews__customer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sint dolorem! Mollitia vero perspiciatis vitae officiis odio, quia voluptate eaque, in blanditiis quasi nisi delectus quo suscipit corrupti. Placeat, natus.</p>
-                                          <p class="customer-reviews__customer__name text-uppercase mb-0">John doe - <span class="customer-reviews__customer__job">designer</span></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="customer-reviews__card d-flex align-items-center">
-                                      <div class="customer-reviews__img-box d-flex flex-column align-items-center mr-3">
-                                          <img src="img/customer-1.png" class="customer-reviews__img" alt="">
-                                          <p class="customer-reviews__img-caption text-uppercase mt-3">John doe</p>
-                                      </div>
-                                      <div class="customer-reviews__customer w-100 bg-white p-5">
-                                          <p class="customer-reviews__customer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sint dolorem! Mollitia vero perspiciatis vitae officiis odio, quia voluptate eaque, in blanditiis quasi nisi delectus quo suscipit corrupti. Placeat, natus.</p>
-                                          <p class="customer-reviews__customer__name text-uppercase mb-0">John doe - <span class="customer-reviews__customer__job">designer</span></p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="review-bottom">
-              <img src="img/review-bottom-bg.png" class="w-100" alt="">
-          </div>
-      </div>
-  </section>
+        <div class="row">
+            <div class="review-top">
+                <img src="img/review-top-bg.png" class="w-100" alt="">
+            </div>
+            <div class="container">
+                <div class="my-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-center mb-4">
+                                <h3 class="text-capitalize text-lightwarning mb-0 heading-sub">What say our clients</h3>
+                                <h1 class="font-weight-bold big-text text-white mb-0 title-sub">customer reviews</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="c-review" class="owl-carousel">
+                                <div>
+                                    <div class="row flex-md-row customer-reviews__card  align-items-center mb-3">
+                                        <div class="col-12 col-md-3 col-lg-2">
+                                            <div class=" customer-reviews__img-box d-flex flex-column align-items-center mb-md-0 mb-3">
+                                                <img src="img/customer-1.png" class="customer-reviews__img" alt="">
+                                                <p class="customer-reviews__img-caption text-uppercase mt-md-2 mt-1 mb-0">John doe</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 col-lg-10">
+                                            <div class="customer-reviews__customer text-left w-100 bg-white p-md-4 p-lg-5 p-3">
+                                                <p class="customer-reviews__customer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sint dolorem! Mollitia vero perspiciatis vitae officiis odio, quia voluptate eaque, in blanditiis quasi nisi delectus quo suscipit corrupti. Placeat, natus.</p>
+                                                <p class="customer-reviews__customer__name text-uppercase mb-0">John doe - <span class="customer-reviews__customer__job">designer</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row flex-md-row customer-reviews__card  align-items-center mb-3">
+                                        <div class="col-12 col-md-3 col-lg-2">
+                                            <div class=" customer-reviews__img-box d-flex flex-column align-items-center mb-md-0 mb-3">
+                                                <img src="img/customer-1.png" class="customer-reviews__img" alt="">
+                                                <p class="customer-reviews__img-caption text-uppercase mt-md-2 mt-1 mb-0">John doe</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 col-lg-10">
+                                            <div class="customer-reviews__customer text-left w-100 bg-white p-md-4 p-lg-5 p-3">
+                                                <p class="customer-reviews__customer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sint dolorem! Mollitia vero perspiciatis vitae officiis odio, quia voluptate eaque, in blanditiis quasi nisi delectus quo suscipit corrupti. Placeat, natus.</p>
+                                                <p class="customer-reviews__customer__name text-uppercase mb-0">John doe - <span class="customer-reviews__customer__job">designer</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row flex-md-row customer-reviews__card  align-items-center mb-3">
+                                        <div class="col-12 col-md-3 col-lg-2">
+                                            <div class=" customer-reviews__img-box d-flex flex-column align-items-center mb-md-0 mb-3">
+                                                <img src="img/customer-1.png" class="customer-reviews__img" alt="">
+                                                <p class="customer-reviews__img-caption text-uppercase mt-md-2 mt-1 mb-0">John doe</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 col-lg-10">
+                                            <div class="customer-reviews__customer text-left w-100 bg-white p-md-4 p-lg-5 p-3">
+                                                <p class="customer-reviews__customer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sint dolorem! Mollitia vero perspiciatis vitae officiis odio, quia voluptate eaque, in blanditiis quasi nisi delectus quo suscipit corrupti. Placeat, natus.</p>
+                                                <p class="customer-reviews__customer__name text-uppercase mb-0">John doe - <span class="customer-reviews__customer__job">designer</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-bottom">
+                <img src="img/review-bottom-bg.png" class="w-100" alt="">
+            </div>
+        </div>
+    </section>
 
     <section class="booking container-fluid">
         <div class="row">
             <div class="container">
                 <div class="row my-5">
-                    <div class="col-6">
-                        <div class="text-left booking__container">
+                    <div class="col-12 col-md-6">
+                        <div class="booking__container mb-5 mb-md-0">
                             <h3 class="text-capitalize text-lightwarning mb-0 heading-sub">fresh from pizza</h3>
                             <h1 class="font-weight-bold big-text mb-0 booking-caption title-sub">Book online</h1>
-                            <p class="booking__des mt-2 small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corrupti sint incidunt aliquid animi libero facere tempora possimus vitae quidem est quas, et, magnam harum alias error officia, totam rem.</p>
-                            <div class="booking__phone mt-4 p-3 d-flex align-items-center justify-content-center">
+                            <p class="booking__des my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corrupti sint incidunt aliquid animi libero facere tempora possimus vitae quidem est quas, et, magnam harum alias error officia, totam rem.</p>
+                            <div class="booking__phone mt-md-4 mt-1 p-lg-2 p-md-3 p-2 d-flex align-items-center justify-content-center">
                                 <i class="fas fa-phone "></i><p class="mb-0">+ 91 123 456 789 0</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 booking__form">
+                    <div class="col-12 col-md-6 booking__form">
                         <h2 class="text-uppercase text-center booking__form__title font-weight-bold mb-4">book a table</h2>
                         <form action="#" class="form">
                             <div class="form-group">
-                                <input type="text" class="form-control p-4 mb-4" placeholder="Name">    
+                                <input type="text" class="form-control p-3 p-lg-3  mb-lg-4" placeholder="Name">    
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control p-4 mb-4" placeholder="Email">    
+                                <input type="email" class="form-control p-3 p-lg-3 mb-lg-4" placeholder="Email">    
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control p-4 mb-4" placeholder="How many person ?">    
+                                <input type="email" class="form-control p-3 p-lg-3 mb-lg-4" placeholder="How many person ?">    
                             </div>
                             <div class="form-group">
-                                <input type="date" class="form-control p-4 mb-4" placeholder="Enter email">    
+                                <input type="date" class="form-control p-3 p-lg-3 mb-lg-4" placeholder="Enter email">    
                             </div>
                             <div class="d-flex justify-content-center">
                                 <button class="btn text-uppercase booking__book-btn">
@@ -392,70 +460,72 @@
     </section>
 
     <footer class="footer container-fluid">
-      <div class="row">
-          <div class="container">
-              <div class="row py-5 my-5">
-                  <div class="col-4">
-                      <div class="footer__address">
-                          <img src="img/footer-logo.png" class="my-4" alt="">
-                          <p class="mb-4">20 Carrochan Rd, Balloch, Alexandria G83 8EG, UK 69QJ+2F Alexandria, United Kingdom</p>
-                          <p class="mb-4">PHONE - +91 123 456 789 0 , +91 123 456 789 0</p>
-                          <p class="mb-0">EMAIL - <a href="#" class="footer__email">support@pizzon.com</a></p>
-                      </div>
-                  </div>
-                  <div class="col-4">
-                      <h5 class="text-uppercase font-weight-bold my-4 text-white mb-0 footer__timetable-caption">opening hours</h5>
-                      <table class="table footer__timetable">
-                          <tr>
-                              <td>Mon - Tues :</td>
-                              <td class="text-right">6.00 am - 10.00 pm</td>
-                          </tr>
-                          <tr>
-                              <td>Wednes - Thurs :</td>
-                              <td class="text-right">6.00 am - 10.00 pm</td>
-                          </tr>
-                          <tr>
-                              <td>Launch :</td>
-                              <td class="text-right">Everyday</td>
-                          </tr>
-                          <tr>
-                              <td>Sunday :</td>
-                              <td class="text-right"><span class="footer__closed-design py-1 px-3">Closed</span></td>
-                          </tr>
-                      </table>
-                  </div>
-                  <div class="col-4">
-                      <h5 class="text-uppercase footer__useful-link-title font-weight-bold my-4 text-white mb-0">useful links</h5>
-                      <ul class="text-capitalize footer__useful-link-ul">
-                          <li class="footer__useful-link-li mb-2"><a href="#">Privacy Policy</a></li>
-                          <li class="footer__useful-link-li mb-2"><a href="#">Order Tracking</a></li>
-                          <li class="footer__useful-link-li mb-2"><a href="#">Warrenty and Services</a></li>
-                          <li class="footer__useful-link-li mb-2"><a href="#">About</a></li>
-                          <li class="footer__useful-link-li mb-2"><a href="#">Contact Us</a></li>
-                          <li class="footer__useful-link-li mb-2"><a href="#">Wishlist</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="divider"></div>
-              <div class="row my-4 align-items-center">
-                  <div class="col-6">
-                      <p class="mb-0 footer__base">© Pizza all Rights Reserved.Designed by <a href="#" class="footer__designer-link">TemplatesCoder</a>.Coding by me.</p>
-                  </div>
-                  <div class="col-6">
-                      <div class="footer__social-btn text-right">
-                          <button class="ml-2"><i class="fab fa-facebook-f"></i></button>
-                          <button class="ml-2"><i class="fab fa-instagram"></i></button>
-                          <button class="ml-2"><i class="fab fa-linkedin-in"></i></button>
-                          <button class="ml-2"><i class="fab fa-twitter"></i></button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+        <div class="row">
+            <div class="container">
+                <div class="row py-5 my-lg-5 text-lg-left text-center">
+                    <div class="col-12 col-lg-4">
+                        <div class="footer__address mb-5">
+                            <img src="img/footer-logo.png" class="mt-lg-5 my-3 mb-lg-1" alt="">
+                            <p class="mb-3 my-lg-3">20 Carrochan Rd, Balloch, Alexandria G83 8EG, UK 69QJ+2F Alexandria, United Kingdom</p>
+                            <p class="mb-3 my-lg-4">PHONE - +91 123 456 789 0 , +91 123 456 789 0</p>
+                            <p class="mb-0">EMAIL - <a href="#" class="footer__email">support@pizzon.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="mb-5">
+                            <h5 class="text-uppercase font-weight-bold my-0 my-lg-5 text-white mb-lg-0 mb-4 footer__timetable-caption">opening hours</h5>
+                            <table class="table footer__timetable">
+                                <tr>
+                                    <td>Mon - Tues :</td>
+                                    <td class="text-right">6.00 am - 10.00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednes - Thurs :</td>
+                                    <td class="text-right">6.00 am - 10.00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Launch :</td>
+                                    <td class="text-right">Everyday</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday :</td>
+                                    <td class="text-right"><span class="footer__closed-design py-1 px-3">Closed</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h5 class="text-uppercase footer__useful-link-title font-weight-bold my-0 my-lg-5 text-white mb-lg-0 mb-4">useful links</h5>
+                        <ul class="text-capitalize footer__useful-link-ul">
+                            <li class="footer__useful-link-li mb-2"><a href="#">Privacy Policy</a></li>
+                            <li class="footer__useful-link-li mb-2"><a href="#">Order Tracking</a></li>
+                            <li class="footer__useful-link-li mb-2"><a href="#">Warrenty and Services</a></li>
+                            <li class="footer__useful-link-li mb-2"><a href="about.html">About</a></li>
+                            <li class="footer__useful-link-li mb-2"><a href="contact.html">Contact Us</a></li>
+                            <li class="footer__useful-link-li mb-2"><a href="#">Wishlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row my-4 align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <p class="mb-0 footer__base text-center text-lg-left mb-2 mb-lg-0">© Pizza all Rights Reserved.Designed by <a href="#" class="footer__designer-link">TemplatesCoder</a>.Coding by me.</p>
+                    </div>
+                    <div class="col-12 col-lg-6 ">
+                        <div class="footer__social-btn text-center text-lg-right">
+                            <button class="ml-2"><i class="fab fa-facebook-f"></i></button>
+                            <button class="ml-2"><i class="fab fa-instagram"></i></button>
+                            <button class="ml-2"><i class="fab fa-linkedin-in"></i></button>
+                            <button class="ml-2"><i class="fab fa-twitter"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    <a href="#header" class="scroll-arrow">
+    <a href="#banner" class="scroll-arrow">
         <i class="fas fa-angle-up"></i>
-    </a>
+    </a>   
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>

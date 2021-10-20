@@ -93,11 +93,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0px 100px 0px;
+  padding: 100px 0px 50px 0px;
 }
 
 .banner-heading {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--white);
@@ -385,7 +385,7 @@ html {
   display: none;
   position: absolute;
   left: 0;
-  top: 70px;
+  top: 60px;
   background-color: #f1f1f1;
   width: 100%;
   z-index: 1;
@@ -458,7 +458,7 @@ html {
 }
 
 .pizza-logo{
-  width: 90px;
+  width: 80px;
 }
 
 /* #home__showcase navigator */
@@ -530,8 +530,6 @@ html {
   color: var(--white);
   right: 0;
   top: 15px;
-  line-height: 15px;
-  font-size: 10px;
   cursor: pointer;
 }
 
@@ -546,6 +544,10 @@ html {
   justify-content: start;
   padding: 20px 20px 20px 0;
   border-bottom: 1px solid #ddd;
+}
+
+.header__cart-item .fa-times{
+  font-size: 10px;
 }
 
 .header__cart-item__img {
@@ -1020,7 +1022,7 @@ html {
 }
 
 .booking__des {
-  line-height: 25px;
+  line-height: 20px;
   letter-spacing: 0.5px;
   max-width: 370px;
   font-size: 14px;
@@ -1235,6 +1237,7 @@ html {
 
 .customer-reviews__customer__text {
   color: var(--light-dark);
+  line-height: 1.2;
 }
 
 .customer-reviews__customer__name {
@@ -1449,19 +1452,24 @@ html {
   object-fit: cover;
 }
 
+.about__para{
+  font-size: 14px;
+}
+
 /* our-story */
 .our-story {
   background-color: var(--bg-color);
 }
 .our-story__story {
-  padding: 0px 200px;
+  padding: 0;
 }
 .our-story__story-des {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .our-story__story-sign {
   display: block;
   margin: 0px auto;
+  width: 150px;
 }
 
 /* experience */
@@ -1672,7 +1680,7 @@ html {
   font-size: 18px;
 }
 .blog__para__title {
-  font-size: 2em;
+  font-size: 20px;
   color: var(--dark);
   letter-spacing: var(--ls);
   font-weight: 700;
@@ -1683,26 +1691,29 @@ html {
 .blog__para__special-text {
   text-align: center;
   border: 1px solid #dddddd;
-  padding: 50px 150px;
+  padding: 10px;
   margin-bottom: 1rem;
+  font-size: 1.25rem;
 }
 .blog__tagname {
   list-style-type: none;
+  text-align: center;
 }
 .blog__tagname li {
-  display: inline;
-  margin-right: 5px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 15px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
 }
 .blog__tagname a {
   font-size: 14px;
   list-style: none;
   text-decoration: none;
   color: #999999;
-  padding: 10px 30px;
-  border: 1px solid #dddddd;
-  border-radius: 20px;
   letter-spacing: var(--ls);
   transition: 0.4s;
+  line-height: 14px;
 }
 
 .blog__tagname a:hover {
@@ -1712,6 +1723,10 @@ html {
 }
 .blog__special {
   background-color: #f5f5f5;
+}
+
+.blog__special__para{
+  text-align: center;
 }
 
 .blog__special__title {
@@ -1728,14 +1743,19 @@ html {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: var(--ls);
+  font-size: 20px;
+  text-align: center;
 }
 .blog__comment__box {
   border-top: 1px solid #dddddd;
 }
+.blog__comment__para{
+  text-align: center;
+}
 .blog__comment__para p {
   color: #999999;
 }
-.blog__comment__reply a {
+.blog__comment__reply{
   border: 1px solid var(--main);
   padding: 10px 30px;
   background-color: var(--main);
@@ -1745,17 +1765,18 @@ html {
   letter-spacing: var(--ls);
   transition: 0.4s;
 }
-.blog__comment__reply a:hover {
+.blog__comment__reply:hover {
   color: var(--main);
   background-color: var(--white);
 }
 /* blog-post-comment */
 .blog__post-comment__title {
-  font-size: 2em;
+  font-size: 20px;
   color: var(--dark);
   letter-spacing: var(--ls);
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 /* blog-post-form */
 .blog__post-comment__form input::-webkit-input-placeholder,
@@ -1772,7 +1793,7 @@ html {
   border: 1px solid var(--main);
   background-color: var(--main);
   border-radius: 30px;
-  padding: 15px 30px;
+  padding: 10px 20px;
   transition: 0.4s;
 }
 .blog__post-comment__form-submit:hover {
@@ -2791,6 +2812,56 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .footer__useful-link-ul{
     margin:0;
   }
+
+  /* 768 banner */
+  .banner-bg{
+    padding: 150px 0 50px 0;
+  }
+  
+  .banner-heading{
+    font-size: 36px;
+  }
+
+  /* 768 Blog detail */
+  .blog__para__title{
+    font-size: 26px;
+  }
+  .blog__para__special-text{
+    padding: 60px 20px;
+  }
+
+  .blog__tagname li{
+    padding: 8px 30px;
+    font-size: 16px;
+  }
+
+  .blog__special__para{
+    text-align: left;
+  }
+
+  .blog__comment__title{
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .blog__comment__para{
+    text-align: left;
+  }
+
+  .blog__post-comment__title{
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .blog__post-comment__form-submit{
+    padding: 15px 25px;
+  }
+
+  /* 768 our story */
+  .our-story__story-sign{
+    width: auto;
+  }
+
 }
 @media only screen and (min-width: 992px){
   .owl-carousel .owl-item img{
@@ -2814,15 +2885,20 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     height: 60px;
   }
   /* nav responsive */
+  .pizza-logo{
+    width: 100px;
+  }
   .header .navbar{
-    padding: .5rem 1rem;
+    padding: 0 1rem;
   }
   .pizza-nav .navbar-nav{
     background-color: transparent;
     width: 120%;
   }
   
-
+  .pizza-nav .nav-item{
+    font-size: 18px;
+  }
   /* home*/
   .home::before{
     height: 120%;
@@ -2926,6 +3002,36 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     width: auto;
     margin: 0;
   }
+  /* 992 banner bg */
+  .banner-heading{
+    font-size: 46px;
+  }
+
+  /* 992 blog detail*/
+
+  .blog__para__special-text{
+    padding: 40px 60px;
+  }
+
+  .blog__para__special-text{
+    margin-bottom: 1.25rem;
+  }
+
+  .blog__para__special-text p{
+    line-height: 2;
+  }
+
+  .blog__tagname li{
+    padding: 8px 35px;
+  }
+
+  /* 992 about us */
+  /* 992 our story */
+  .our-story__story-des{
+    margin-bottom: 40px;
+  }
+  
+  
 }
 @media only screen and (min-width: 1200px){
   .owl-carousel .owl-item img{
@@ -3068,6 +3174,21 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   /* footer */
   .footer__address img{
     width: auto;
+  }
+  /* 1200 banner */
+  .banner-bg{
+    padding: 150px 0 100px 0;
+  }
+  /* 1200 blog detail */
+  .blog__para__title{
+    font-size: 30px;
+  }
+  .blog__para__special-text{
+    padding: 40px 100px;
+  }
+
+  .blog__post-comment__form-submit{
+    padding: 15px 30px;
   }
 }
 @media only screen and (min-width: 1400px){

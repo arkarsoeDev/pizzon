@@ -1492,7 +1492,7 @@ html {
   transition: 0.4s;
   outline: none;
   color: #999999;
-  padding: 18px 40px 18px 20px;
+  padding: 10px;
   width: 100%;
   transition: 0.4s;
 }
@@ -1504,8 +1504,8 @@ html {
   top: 0;
   right: 10px;
   bottom: 0;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
 }
 .blog-main__search .fa-search {
   color: #dddddd;
@@ -1514,6 +1514,7 @@ html {
   border: 1px solid var(--dark);
 }
 .blog-main__categories__title {
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: var(--ls);
@@ -1527,14 +1528,15 @@ html {
   text-decoration: none;
   transition: 0.4s;
   border-top: 1px solid #dddddd;
-  padding: 14px 0px;
-  font-size: 15px;
+  padding: 12px 0px;
+  font-size: 14px;
   letter-spacing: var(--ls);
 }
 .blog-main__categories__item a:hover {
   color: var(--main);
 }
 .blog-main__recent__title {
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: var(--ls);
@@ -1545,12 +1547,12 @@ html {
 }
 .blog-main__recent__item {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin-bottom: 25px;
 }
 .blog-main__recent__img-container {
-  width: 140px;
+  width: 80px;
   overflow: hidden;
   margin-right: 10px;
 }
@@ -1567,11 +1569,11 @@ html {
 }
 .blog-main__recent__date {
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--main);
 }
 .blog-main__recent__link {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--dark);
   font-weight: bold;
   display: block;
@@ -1583,19 +1585,20 @@ html {
   color: var(--dark);
 }
 .blog-main__tags__title {
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: var(--ls);
 }
 .blog-main__tags__keywords {
   border-top: 1px solid #dddddd;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .blog-main__tags__button {
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   border: 1px solid #dddddd;
-  padding: 5px 15px;
+  padding: 5px 10px;
   margin: 0px 10px 10px 0px;
   background-color: var(--white);
   color: #999999;
@@ -1629,7 +1632,7 @@ html {
 }
 .blog-main__news__title {
   display: block;
-  font-size: 2em;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: var(--ls);
   color: var(--dark);
@@ -1649,9 +1652,10 @@ html {
 }
 .blog-main__news__locater a {
   display: inline-block;
-  width: 50px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   margin-right: 10px;
-  padding: 10px 15px;
   border: 1px solid #999999;
   color: #999999;
   text-align: center;
@@ -2819,7 +2823,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   
   .banner-heading{
-    font-size: 36px;
+    font-size: 42px;
   }
 
   /* 768 Blog detail */
@@ -2860,6 +2864,24 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   /* 768 our story */
   .our-story__story-sign{
     width: auto;
+  }
+
+  /* 768 blog */
+  .blog-main__news__title{
+    font-size: 25px;
+  }
+
+  .blog-main__recent__title,.blog-main__categories__title,.blog-main__tags__title{
+    font-size: 20px;
+  }
+
+  .blog-main__recent__date{
+    font-size: 16px;
+  }
+
+  .blog-main__recent__item{
+    flex-direction: column;
+    align-items: flex-start;
   }
 
 }
@@ -3189,6 +3211,35 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 
   .blog__post-comment__form-submit{
     padding: 15px 30px;
+  }
+
+  /* 1200 blog */
+  .blog-main__search__text{
+    padding: 20px;
+  }
+  .blog-main__search__submit{
+    width: 60px;
+    height: 60px;
+  }
+
+  .blog-main__news__title{
+    font-size: 30px;
+  }
+
+  .blog-main__recent__title,.blog-main__categories__title,.blog-main__tags__title{
+    font-size: 24px;
+  }
+
+  .blog-main__recent__item{
+    flex-direction: row;
+  }
+
+  .blog-main__recent__img-container{
+    width: 100px;
+  }
+
+  .blog-main__recent__list{
+    font-size: 18px;
   }
 }
 @media only screen and (min-width: 1400px){

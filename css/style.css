@@ -2530,8 +2530,9 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 
 /* contact */
-.contact__detail h2 {
+.contact__detail__title {
   letter-spacing: var(--ls);
+  font-size: 35px;
 }
 .contact__detail__para {
   font-size: 14px;
@@ -2559,6 +2560,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 .contact__detail__list li {
   vertical-align: middle;
+
 }
 .contact__form__btn {
   display: block;

@@ -2270,6 +2270,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 
 /* reservation */
+
 .reservation__input {
   border-radius: 30px;
 }
@@ -2283,7 +2284,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 .reservation .select-selected {
   text-align: left;
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
   transition: 0.4s;
   user-select: none;
   border: 1px solid #ddd;
@@ -2296,7 +2297,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 .reservation .select-selected::after {
   position: absolute;
   content: "";
-  top: 28px;
+  top: 20px;
   right: 25px;
   width: 0;
   height: 0;
@@ -2305,7 +2306,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 .reservation .select-selected.select-arrow-active:after {
   border-color: transparent transparent var(--dark) transparent;
-  top: 20px;
+  top: 10px;
 }
 .reservation .select-items div,
 .reservation .select-selected {
@@ -2314,7 +2315,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 .reservation .select-items div {
   border-top: 1px solid #dddddd;
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
 }
 .reservation .select-items div:first-child {
   border-top: 0px;
@@ -2343,7 +2344,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   border: 1px solid var(--main);
 }
 .reservation .form-control {
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
   transition: 0.4s;
   user-select: none;
   border: 1px solid #ddd;
@@ -2357,8 +2358,8 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 .reservation__btn {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 20px;
-  padding: 15px 100px;
+  font-size: 18px;
+  padding: 6px 30px;
   background-color: var(--main);
   color: var(--white);
   border: 1px solid var(--main);
@@ -2922,6 +2923,17 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     font-size: 20px;
   }
 
+  /* 768 reservation */
+
+  .reservation{
+    background: url("../img/table-book.jpg") no-repeat center/cover;
+  }
+
+  .reservation__btn{
+    font-size: 20px;
+    padding: 5px 50px;
+  }
+
 }
 @media only screen and (min-width: 992px){
   .owl-carousel .owl-item img{
@@ -3097,6 +3109,33 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   .cart .mb{
     margin-bottom: 6rem;
+  }
+
+  /* 992 reservation */
+
+  .reservation .form-control{
+    padding: 1rem 2rem;
+  }
+
+  .reservation .select-selected {
+    padding: 1rem 2rem;
+  }
+
+  .reservation .select-selected::after{
+    top: 27px;
+  }
+
+  .reservation .select-selected.select-arrow-active:after{
+    top: 17px;
+  }
+
+  .reservation .select-items div{
+    padding: 1rem 2rem;
+  }
+
+  .reservation__btn{
+    padding: 11px 170px;
+    font-size: 24px;
   }
   
 }

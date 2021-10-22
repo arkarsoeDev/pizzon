@@ -2247,9 +2247,11 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 
 .categories__pizza-item-text{
   font-size: 14px;
+  color: #999999;
 }
 
 .categories__pizza-item-price{
+  font-weight: bold;
   color: var(--main);
 }
 
@@ -2948,6 +2950,15 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     padding: 5px 50px;
   }
 
+  /* 768 shop categories */
+  .categories__pizza-item-title{
+    font-size: 18px;
+  }
+
+  .categories__pizza-item-price{
+    font-size: 18px;
+  }
+
 }
 @media only screen and (min-width: 992px){
   .owl-carousel .owl-item img{
@@ -3150,6 +3161,19 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .reservation__btn{
     padding: 11px 170px;
     font-size: 24px;
+  }
+
+  /* 992 shop categories */
+  .categories__pizza-item-img{
+    width: 200px;
+  }
+
+  .categories__showcase__title{
+    font-size: 40px;
+  }
+
+  .categories__showcase__text{
+    font-size: 16px;
   }
   
 }

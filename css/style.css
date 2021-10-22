@@ -1834,6 +1834,7 @@ html {
   text-align: center;
 }
 .menu1__item__title {
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: var(--ls);
@@ -2909,6 +2910,11 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .cart__proceed-btn a{
     padding: 15px;
     font-size: 16px;
+  }
+
+  /* 768 menu 1 */
+  .menu1__item__title{
+    font-size: 20px;
   }
 
 }

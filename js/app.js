@@ -218,20 +218,20 @@ function menuFill(menuBox){
 function menu1Fill(menuBox){
   for (var i = 0; i < menuBox.length; i++) {
     $("#menu1Container").append(`
-    <div class="col-4">
+    <div class="col-12 col-md-4">
         <div class="menu1__item mt-4 animate__animated animate__fadeIn">
             <div class="menu1__item__img-container">
                 <a href="#"><img src="img/menu-1/list-${menuBox[i]}.jpg" alt=""></a>
             </div>
             <div class="menu1__item__des  m-3">
-                <h5 class="menu1__item__title">barbecue</h5>
-                <ul class="menu1__item__ingredient">
+                <p class="menu1__item__title mb-1">barbecue</p>
+                <ul class="menu1__item__ingredient mb-1">
                     <li>Chicken</li>
                     <li>Olive Oil</li>
                     <li>Salt</li>
                 </ul>
-                <p class="menu1__item__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aut veniam, temporibus alias, natus beatae doloribus excepturi similique eaque sed odio eos voluptatem laboriosam. Hic fugiat impedit repellat beatae vel?
+                <p class="menu1__item__text mb-1">
+                    Lorem ipsum dolor sit amet consecte doloribus excepturi similique eaque sed odio eos voluptatem laboriosam. Hic fugiat impedit repellat beatae vel?
                 </p>
                 <a href="#" class="menu1__item__link">Order now</a>
             </div>

@@ -1928,15 +1928,16 @@ html {
 /* item-detail */
 
 .item-detail__main-img {
-  width: 400px;
+  width: 200px;
 }
 .item-detail__para__title {
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: var(--ls);
 }
 .item-detail__para__price {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--main);
 }
 .item-detail__para__text {
@@ -1957,13 +1958,14 @@ html {
 }
 .item-detail .item-detail__para__theme-option li a,
 .item-detail .item-detail__para__size-option li a {
+  font-size: 14px;
   display: inline-block;
   color: #999999;
-  padding: 15px 30px;
+  padding: 8px 20px;
   border: 1px solid #dddddd;
   text-transform: capitalize;
   transition: 0.4s;
-  margin-right: 5px;
+  margin: 0 5px 5px 0;
 }
 .item-detail ul.item-detail__para__theme-option li a:hover,
 .item-detail ul.item-detail__para__size-option li a:hover {
@@ -1973,8 +1975,8 @@ html {
   text-decoration: none;
 }
 .item-detail__para__qty-box {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -1988,8 +1990,8 @@ html {
   letter-spacing: var(--ls);
 }
 .item-detail__para__addcart-submit {
-  height: 50px;
-  font-size: 18px;
+  height: 40px;
+  font-size: 16px;
   background-color: var(--main);
   border: 1px solid var(--main);
   text-transform: uppercase;
@@ -2028,7 +2030,7 @@ html {
   text-decoration: none;
 }
 .item-detail__para__social p {
-  font-size: 20px;
+  font-size: 16px;
 }
 .item-detail__para__social a {
   color: #999999;
@@ -2052,6 +2054,7 @@ html {
   background-color: var(--white);
   transition: 0.4s;
   outline: none;
+  width: 50%;
 }
 .item-detail__des__control-btn .active {
   background-color: var(--main);
@@ -2067,13 +2070,18 @@ html {
   border-bottom: 1px solid #dddddd;
 }
 .item-detail__des__comment-img {
+  width: 70px;
   border-radius: 50%;
 }
 .item-detail__des__comment-date {
   font-weight: normal;
   color: #999999;
 }
+.item-detail__des__comment-name{
+  font-size: 14px;
+}
 .item-detail__des__comment-text {
+  font-size: 14px;
   color: #999999;
 }
 .item-detail__des__comment-reply a {
@@ -2095,6 +2103,7 @@ html {
   background-color: var(--light-dark-2);
   border: none;
   transition: 0.4s;
+  font-size: 14px;
 }
 .item-detail__des__comment-post__btn:hover {
   color: var(--white);
@@ -2104,6 +2113,7 @@ html {
 /* related-products */
 /* pizza-item-carousel */
 .related-products__pizza-img {
+  width: 120px;
   transition: 0.4s;
 }
 .related-products__pizza-img:hover {
@@ -2115,6 +2125,10 @@ html {
   transition: 0.3s;
 }
 
+.related-products__para__title p {
+  font-size: 16px;
+}
+
 .related-products__para__title:hover {
   text-decoration: none;
   color: var(--main);
@@ -2124,6 +2138,7 @@ html {
   font-size: 14px;
   color: #999999;
   letter-spacing: var(--ls);
+  width: 75%;
 }
 .related-products__para__price {
   color: var(--main);
@@ -2959,6 +2974,49 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     font-size: 18px;
   }
 
+  /* 768 shop detail */
+
+  .item-detail__des__control-btn button{
+    width: fit-content;
+  }
+
+  .item-detail__main-img{
+    width: 250px;
+  }
+
+  .item-detail__para__title{
+    font-size: 28px;
+  }
+
+  .item-detail__para__price{
+    font-size: 18px;
+  }
+
+  .item-detail__des__comment-img{
+    width: 100px;
+  }
+  .item-detail__des__comment-name{
+    font-size: 16px;
+  }
+
+  .item-detail__des__comment-text{
+    font-size: 16px;
+  }
+
+  /* 768 related */
+
+  .related-products__para__text{
+    width: auto;
+  }
+
+  .related-products__pizza-img{
+    width: 150px;
+  }
+
+  .related-products__para__title p{
+    font-size: 18px;
+  }
+
 }
 @media only screen and (min-width: 992px){
   .owl-carousel .owl-item img{
@@ -3175,7 +3233,34 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .categories__showcase__text{
     font-size: 16px;
   }
-  
+
+  /* 992 shop detail */
+  .item-detail__para__social p {
+    font-size: 20px;
+  }
+
+  .item-detail__main-img{
+    width: 300px;
+  }
+
+  .item-detail .item-detail__para__theme-option li a, .item-detail .item-detail__para__size-option li a{
+    padding: 13px 24px;
+  }
+
+  .item-detail__para__qty-box{
+    width: 50px;
+    height: 50px;
+  }
+
+  .item-detail__para__addcart-submit{
+    font-size: 20px;
+    height: 50px;
+  }
+
+  /* 992 related */
+  .related-products__pizza-img{
+    width: 200px;
+  }
 }
 @media only screen and (min-width: 1200px){
   .owl-carousel .owl-item img{

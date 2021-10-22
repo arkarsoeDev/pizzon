@@ -2368,9 +2368,23 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   border: 1px solid var(--main);
 }
 /* cart */
-.cart table {
-  table-layout: fixed;
+.cart__table-container{
+  position: relative;
 }
+
+.cart__table-scroll{
+  width: 100%;
+  display: block;
+  overflow: scroll;
+}
+.cart table {
+  table-layout: auto;
+}
+
+.cart th,.cart td{
+  white-space: nowrap;
+}
+
 .cart table td img {
   width: 100px;
   border: 1px solid #ddd;
@@ -2404,9 +2418,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   background-color: var(--white);
   border: 1px solid var(--main);
 }
-.cart__two-btn {
-  margin: 2.5rem 0px;
-}
+
 .cart__border-bottom {
   border-bottom: 1px solid #ddd;
 }
@@ -2418,9 +2430,11 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   border: 1px solid var(--main);
   background-color: var(--main);
   color: var(--white);
-  padding: 10px 30px;
+  padding: 10px;
   transition: 0.4s;
   letter-spacing: var(--ls);
+  text-align: center;
+  font-size: 14px;
 }
 .cart__btn:hover,
 .cart__proceed-btn a:hover {
@@ -2430,10 +2444,10 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   text-decoration: none;
 }
 .cart .mt {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 .cart .mb {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 .cart__right-container table {
   text-transform: capitalize;
@@ -2884,6 +2898,17 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     align-items: flex-start;
   }
 
+  /* 768 cart */
+  .cart__btn{
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .cart__proceed-btn a{
+    padding: 15px;
+    font-size: 16px;
+  }
+
 }
 @media only screen and (min-width: 992px){
   .owl-carousel .owl-item img{
@@ -3053,6 +3078,13 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     margin-bottom: 40px;
   }
   
+  /* 992 cart */
+  .cart .mt{
+    margin-top: 6rem;
+  }
+  .cart .mb{
+    margin-bottom: 6rem;
+  }
   
 }
 @media only screen and (min-width: 1200px){

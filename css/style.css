@@ -2147,6 +2147,11 @@ html {
 .categories__showcase .categories__showcase__title span {
   color: var(--main);
 }
+
+.categories__showcase__text {
+  font-size: 14px;
+  color: var(--white);
+}
 /* c-filter */
 .categories__filter {
   border: 1px solid #dddddd;
@@ -2236,7 +2241,16 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 /* parts connect with js might be done here  */
 .categories__pizza-item-img {
+  width: 150px;
   transition: 0.3s;
+}
+
+.categories__pizza-item-text{
+  font-size: 14px;
+}
+
+.categories__pizza-item-price{
+  color: var(--main);
 }
 
 .categories__pizza-item-img:hover {
@@ -2258,9 +2272,9 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   color: var(--white);
   outline: none;
   border: 1px solid var(--dark);
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: var(--ls);
-  padding: 12px 40px;
+  padding: 5px 15px;
   transition: 0.3s;
 }
 

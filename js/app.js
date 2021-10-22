@@ -244,8 +244,8 @@ function menu1Fill(menuBox){
 function menu2Fill(menuBox){
   for (var i = 0; i < menuBox.length; i++) {
     $("#menu2Container").append(`
-      <div class="col-6">
-      <div class="menu2__card d-flex align-items-center px-3 mb-3 animate__animated animate__fadeIn">
+      <div class="col-12 col-md-6 px-0">
+      <div class="menu2__card d-flex align-items-center px-md-3 mb-3 animate__animated animate__fadeIn">
           <div class="menu2__card__img mr-4">
               <a href="#"><img src="img/menu-2/list-${menuBox[i]}.jpg" alt=""></a>
           </div>

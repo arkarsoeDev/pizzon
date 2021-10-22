@@ -1902,7 +1902,7 @@ html {
   letter-spacing: var(--ls);
   font-weight: bold;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   transition: 0.3s;
 }
 
@@ -1913,7 +1913,7 @@ html {
 
 .menu2__card__price {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--main);
 }
 
@@ -2914,6 +2914,11 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 
   /* 768 menu 1 */
   .menu1__item__title{
+    font-size: 20px;
+  }
+
+  /* 768 menu 2 */
+  .menu2__card__title,.menu2__card__price{
     font-size: 20px;
   }
 

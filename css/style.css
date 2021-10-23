@@ -2987,6 +2987,10 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     font-size: 16px;
   }
 
+  .cart__table-scroll{
+    overflow: hidden;
+  }
+
   /* 768 menu 1 */
   .menu1__item__title{
     font-size: 20px;

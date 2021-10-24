@@ -190,7 +190,7 @@ html {
 
 .active .pizza-banner-1 {
   animation-duration: 1.5s;
-  transform: translateX(-2000px);
+  transform: translateX(0);
   transition: all 1.5s;
   transition-delay: 1s;
 }
@@ -227,7 +227,7 @@ html {
 
 .active .pizza-banner-2 {
   animation: slideInLeft;
-  transform: translateX(1000px);
+  transform: translateX(0);
   transition: all 1.5s;
   transition-delay: 1s;
 }
@@ -282,7 +282,7 @@ html {
 .active .pizza-banner-3 {
   transition: all 1.5s;
   transition-delay: 1.5s;
-  transform: translateY(-1000px);
+  transform: translateY(0px);
 }
 
 .active .home__showcase-3__animate .pizza-first-position {
@@ -463,11 +463,10 @@ html {
 }
 
 /* #home__showcase navigator */
-
 .home__left,
 .home__right {
   position: absolute;
-  top: 50vh;
+  top: 45%;
   color: var(--main);
   font-size: 50px;
   z-index: 2000;
@@ -671,6 +670,7 @@ html {
 }
 
 .home {
+  position: relative;
   overflow: hidden;
   background-color: var(--soft-dark);
   padding: 25px 0px 0px 0px;
@@ -691,7 +691,7 @@ html {
 }
 
 .home__showcase-3 {
-  padding: 5rem 5px 0 5px;
+  padding: 6rem 5px 0 5px;
   margin: 0;
   width: 100%;
   max-height: 100vh;
@@ -723,33 +723,43 @@ html {
 }
 
 .pizza-banner-1,.pizza-banner-2 {
-  position: relative;
   filter: drop-shadow(5px 5px 20px #000);
   max-width: 150px !important;
-  margin: 0 auto;
-  padding: 1rem 0 2rem 0;
+}
+
+.home__showcase-1__img-container,.home__showcase-2__img-container,.home__showcase-3__img-container{
+  position: relative;
+}
+
+.home__center-container{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.home__showcase-3 .home__center-container{
+  padding: 3rem 0 0 0;
 }
 
 .pizza-banner-1{
-  right: -2000px;
+  transform: translateX(2000px);
 }
 .pizza-banner-2{
-  left: -1000px;
+  transform: translateX(-2000px);
 }
 
-
 .pizza-banner-3 {
-  position: relative;
-  margin: 0px auto;
-  bottom: -1020px;
-  max-width: 100% !important;
-  padding:1rem 0 0 0;
-
+  max-width: 350px !important;
+  transform: translateY(1000px);
 }
 
 .pizza-first-position {
   position: absolute;
-  width: 40px !important;
+  width: 30px !important;
+}
+
+.home__showcase-3 .pizza-first-position{
+  width: 50px !important;
 }
 
 .home-showcase-1 .pizza-first-position {
@@ -778,71 +788,70 @@ html {
   transform: translateY(-5000px);
 }
 .pizza-1{
-  right: 100px;
-  top: 40px;
+  right: -10px;
+  top: 5px;
 }
 .pizza-2{
-  top: 15px;
-  left: 130px;
+  top: -30px;
+  left: 80px;
 }
 .pizza-3{
-  top: 50px;
-  left: 65px;
+  top: 40px;
+  left: -30px;
 }
 .pizza-4{
-  right: 100px;
-  bottom: 40px;
+  right: -15px;
+  bottom: 10px;
 }
 .pizza-5{
-  right: 50px;
+  right: -30px;
   bottom: 90px;
 }
 .pizza-6{
-  right: 15px;
-  bottom: 140px;
+  left: -10px;
+  bottom: 125px;
 }
 .pizza-7 {
-  left: 160px;
-  top: -50px;
+  left: 20px;
+  top: -5px;
 }
 .pizza-8 {
-  left: 0px;
-  bottom: 0px;
+  left: 5px;
+  bottom: 20px;
 }
-
 .pizza-9 {
-  right: 65px;
-  top: -35px;
+  right: 20px;
+  top: 5px;
 }
 .pizza-10 {
   right: 0;
-  bottom: -30px;
+  bottom: 20px;
 }
 .pizza-11 {
-  right: 0px;
+  right: -5px;
   top: 25px;
 }
+
 .pizza-12 {
-  left: 45px;
-  top: 0px;
+  left: -10px;
+  top: 20px;
 }
 
 .pizza-bg-2 {
-  right: 0px;
-  bottom: -170px;
+  right: 20px;
+  bottom: 15px;
 }
 .pizza-bg-3 {
-  right: 0px;
-  top: 0px;
+  right: 30px;
+  top: 40px;
 }
 .pizza-bg-4 {
   top: 20px;
-  left: 400px;
+  left: 40px;
 }
-
 .pizza-bg-5 {
-  left: 60px;
-  bottom: -120px;
+  left: 15px;
+  bottom: 20px;
 }
 
 /* services */
@@ -2732,13 +2741,11 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 
   .home__left{
     left: 10px;
-    top: 40vh;
     font-size: 32px;
   }
 
   .home__right{
     right: 10px;
-    top: 40vh;
     font-size: 32px;
   }
 
@@ -2753,7 +2760,6 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     padding: 100px 0 0 0;
     margin: 0 0 0 0;
     width: 100%;
-    min-height: 50vh;
   }
 
   .pizza-banner-1,.pizza-banner-2{
@@ -2769,6 +2775,61 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     text-align: left;
   }
 
+  .active .pizza-banner-3{
+    transform: translateY(30px);
+  }
+
+  .home__showcase-3 .pizza-first-position{
+    width: 100px !important;
+  }
+
+  .pizza-first-position{
+    width: 60px !important;
+  }
+  .pizza-2 {
+    top: -65px;
+    left: 80px;
+  }
+  .pizza-3{
+    top: -10px;
+    left: -20px;
+  }
+  .pizza-5 {
+    right: -60px;
+    bottom: 90px;
+  }
+  .pizza-6 {
+    left: -10px;
+    bottom: 5px;
+  }
+  .pizza-7 {
+    left: -15px;
+    top: 60px;
+  }
+  .pizza-8 {
+    left: 10px;
+    bottom: 40px;
+  }
+  .pizza-10 {
+    right: 0;
+    bottom: 40px;
+  }
+ .pizza-11 {
+    right: -5px;
+    top: 35px;
+  }
+  .pizza-12 {
+    left: 10px;
+    top: 10px;
+  }
+  .pizza-bg-3 {
+    right: 80px;
+    top: 60px;
+  }
+  .pizza-bg-4 {
+    top: 50px;
+    left: 100px;
+  }
   /* services responsive   */
   .services__card{
     padding: 0 .5rem;
@@ -3126,12 +3187,48 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   .pizza-banner-3{
     max-width: 900px !important;
-    margin-bottom: -360px;
-    padding: 0;
   }
+
+  .home__showcase-3 .pizza-first-position{
+    width: 130px !important;
+  }
+
+  .pizza-first-position{
+    width: 80px !important;
+  }
+
+  .pizza-8 {
+    left: 10px;
+    bottom: 70px;
+  }
+
+  .pizza-9 {
+    right: 40px;
+    top: 10px;
+  }
+
+  .pizza-10 {
+    right: 0px;
+    bottom: 70px;
+  }
+
+  .pizza-11 {
+    right: -5px;
+    top: 60px;
+  }
+
+  .pizza-bg-3 {
+    right: 100px;
+    top: 80px;
+  }
+
+  .pizza-bg-4{
+    top: 50px;
+    left: 120px;
+  }
+
   .home__left,.home__right
   {
-    top: 50vh;
     font-size: 38px;
   }
   /* services */
@@ -3357,27 +3454,25 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   .pizza-banner-3{
     max-width: 1050px !important;
-    bottom: -1000px;
   }
   .active .pizza-banner-3 {
-    transform: translateY(-950px);
+    transform: translateY(50px);
   }
-  .pizza-bg-2{
+
+  .home__showcase-3 .pizza-first-position{
+    width: 140px !important;
+  }
+
+  .pizza-bg-3 {
     right: 140px;
-    bottom: -190px;
+    top: 100px;
   }
-  .pizza-bg-3{
-    right: 100px;
-    top: 50px;
+
+  .pizza-bg-4 {
+    top: 70px;
+    left: 160px;
   }
-  .pizza-bg-4{
-    left: 400px;
-    top: 50px;
-  }
-  .pizza-bg-5{
-    left: 170px;
-    bottom: -170px;
-  }
+  
   /* services */
   .services__top-img{
     margin-top: -80px;
@@ -3506,11 +3601,9 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
 }
 @media only screen and (min-width: 1400px){
   .home__left{
-    top: 50vh;
     left: 2%;
   }
   .home__right{
-    top: 50vh;
     right: 2%;
   }
   .home__showcase-1,.home__showcase-2{
@@ -3518,21 +3611,18 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
   
   .active .pizza-banner-3 {
-    transform: translateY(-1020px);
+    transform: translateY(10px);
   }
 
-  .pizza-bg-3{
-    right: 350px;
+  .pizza-bg-5 {
+    left: 15px;
+    bottom: 70px;
   }
-  .pizza-bg-2{
-    right: 400px;
+  .pizza-bg-2 {
+    right: 20px;
+    bottom: 80px;
   }
-  .pizza-bg-4{
-    left: 650px;
-  }
-  .pizza-bg-5{
-    left: 450px;
-  }
+
   /* services */
   .services__top-img{
     margin-top: -100px;
@@ -3564,12 +3654,12 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .home__showcase-1,.home__showcase-2{
     padding: 100px 400px;
   }
-  .home__left,.home__right{
-    top: 35vh;
-  }
 }
 @media only screen and (min-width: 2000px) {
   .home__showcase-1, .home__showcase-2{
     padding: 100px 700px;
+  }
+  .services__top-img{
+    margin-top: -180px;
   }
 }

@@ -96,6 +96,31 @@ html {
   padding: 100px 0px 50px 0px;
 }
 
+.about-banner {
+  background-image: url("../img/blog-7.jpg");
+}
+
+.blog-banner,.blog-detail-banner,.checkout-banner,.cart-banner {
+  background-image: url("../img/blog-1.jpg");
+}
+
+.contact-banner{
+  background-image: url("../img/blog-8.jpg");
+
+}
+
+.menu-1-banner,.menu-2-banner{
+  background-image: url("../img/menu-banner-1.png");
+}
+
+.reservation-banner{
+  background-image: url("../img/blog-6.jpg");
+}
+
+.shop-detail-banner,.shop-categories-banner{
+  background-image: url("../img/blog-9.jpg");
+}
+
 .banner-heading {
   font-size: 30px;
   font-weight: 700;
@@ -107,6 +132,7 @@ html {
 /* banner > bootstrap breadcrumb restylish */
 .banner-title .breadcrumb {
   background: none;
+  text-transform: capitalize;
 }
 
 .banner-title .breadcrumb-item a {
@@ -121,6 +147,7 @@ html {
   color: var(--main) !important;
   text-decoration: none;
 }
+
 
 /* homeshowcase animation */
 
@@ -504,21 +531,37 @@ html {
 /* header__cart-dropdown */
 
 .header__cart-dropdown {
-  position: relative;
   height: 60px;
 }
 
-.header__cart-dropdown-content {
+.header__shopping-icon-sm,.header__phone-icon-sm{
+  color: var(--light-warning);
+  transition: .3s;
+}
+
+.shop-icon-color, .phone-icon-color{
+  color: var(--white);
+}
+
+
+.header__cart-dropdown-content,.header__cart-dropdown-content-sm {
   position: absolute;
   display: none;
   background-color: var(--white);
-  z-index: 1;
-  right: 10px;
-  width: 220%;
+  z-index: 2000;
+  right:5%;
+  width: 30%;
   padding: 10px 20px;
   border-top: 3px solid var(--main);
   box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
   top: 60px;
+}
+
+.header__cart-dropdown-content-sm {
+  position: fixed;
+  right: 0;
+  width: auto;
+  top: 58px;
 }
 
 .header__cart-item__cross-btn {
@@ -1452,10 +1495,6 @@ html {
 }
 
 /* ABOUT */
-/* about-banner */
-.about-banner {
-  background-image: url("../img/about/blog-7.jpg");
-}
 
 /* about-section */
 .about-section__img {
@@ -1490,10 +1529,6 @@ html {
 }
 
 /* BlOG */
-/* blog-banner */
-.blog-banner {
-  background-image: url("../img/blog/blog-1.jpg");
-}
 
 /* blog-main */
 .blog-main__search__text {
@@ -2361,6 +2396,10 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   box-shadow: 0 0 0 0.2rem rgb(253 157 62 / 15%);
 }
 
+.reservation .c-select-item {
+  width: auto;
+}
+
 .reservation .c-select-item select {
   display: none;
 }
@@ -2415,6 +2454,8 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   transition: 0.4s;
   border-radius: 30px;
   overflow: hidden;
+  width: 100%;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
 }
 .reservation .select-hide {
   display: none;
@@ -3151,6 +3192,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .header__dropdown{
     height: 60px;
   }
+
   /* nav responsive */
   .pizza-logo{
     width: 100px;

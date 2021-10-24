@@ -77,6 +77,8 @@ owl3.owlCarousel({
 }
 });
 
+
+
 // nav toggler
 $(".navbar-toggler").click(
   function (){
@@ -104,6 +106,21 @@ $(left).click(function() {
   name.trigger('prev.owl.carousel', [300]);
 })
 }
+
+// cart sm show
+$('#cartDropdownSm').on('click',
+  function(){
+  $('.header__cart-dropdown-content-sm')[0].classList.toggle('d-block');
+  console.log("hello")
+  $('.header__shopping-icon-sm')[0].classList.toggle('shop-icon-color');
+}
+)
+
+$('#cartPhoneSm').on('click',
+  function(){
+  $('.header__phone-icon-sm')[0].classList.toggle('phone-icon-color');
+}
+)
 
 // header dropdown
 dropdown("#header__dropdown",".header__dropdown-content");

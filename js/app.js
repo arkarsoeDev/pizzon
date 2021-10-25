@@ -393,3 +393,17 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+
+// scroll arrow 
+$(document).ready(function () {
+  let screenHeight = $(window).height();
+  $(window).scroll(function () {
+    let currentPosition = $(this).scrollTop();
+    if (currentPosition > screenHeight - 300) {
+      $(".scroll-arrow").addClass("d-lg-block");
+    } else {
+      $(".scroll-arrow").removeClass("d-lg-block");
+    }
+  });
+});

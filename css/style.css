@@ -362,6 +362,10 @@ html {
   padding: 0;
 }
 
+.pizza-nav{
+  background-color: var(--warning);
+}
+
 .pizza-nav .navbar-nav {
   background-color: var(--main);
 }
@@ -561,7 +565,7 @@ html {
   position: fixed;
   right: 0;
   width: auto;
-  top: 58px;
+  top: 59px;
 }
 
 .header__cart-item__cross-btn {
@@ -2769,6 +2773,12 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .order-btn{
     font-size: 16px;
   }
+
+  /* header */
+  .header__cart-dropdown-content-sm {
+    right: 100px;
+    width: 40%;
+}
   
   /* home */
   
@@ -3194,6 +3204,9 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   }
 
   /* nav responsive */
+  .pizza-nav{
+    background-color: var(--transparent);
+  }
   .pizza-logo{
     width: 100px;
   }
@@ -3203,6 +3216,10 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   .pizza-nav .navbar-nav{
     background-color: transparent;
     width: 120%;
+  }
+
+  .pizza-nav .navbar-collapse .nav-item{
+    border: none;
   }
   
   .pizza-nav .nav-item{

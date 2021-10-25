@@ -741,7 +741,7 @@ html {
   padding: 6rem 5px 0 5px;
   margin: 0;
   width: 100%;
-  max-height: 100vh;
+  max-height: 90vh;
 }
 
 .home-row-fix {
@@ -3515,7 +3515,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     max-width: 1050px !important;
   }
   .active .pizza-banner-3 {
-    transform: translateY(50px);
+    transform: translateY(30px);
   }
 
   .home__showcase-3 .pizza-first-position{

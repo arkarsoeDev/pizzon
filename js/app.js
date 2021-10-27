@@ -1,3 +1,10 @@
+// preloader
+$(window).on("load", function () {
+  $(".loader-container").fadeOut(500, function () {
+    this.remove();
+  });
+});
+
 // owl carousel
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
@@ -62,7 +69,7 @@ owl3.owlCarousel({
     0:{
       items:1,
       nav:false,
-      dots:false,
+      dots:true,
     },
     768:{
       items:1,

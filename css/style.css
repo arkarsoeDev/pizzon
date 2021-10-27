@@ -26,6 +26,10 @@ html {
   scroll-behavior: smooth;
 }
 
+input[type="date"].mobile
+  ::before{
+    content: 'DD-MM-YYYY';
+}
 /* integrated style & reused code*/
 .text-lightwarning {
   color: var(--light-warning);

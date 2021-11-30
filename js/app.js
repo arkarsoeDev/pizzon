@@ -56,7 +56,7 @@ owl3.owlCarousel({
 	autoplay: true,
 	nav: false,
 	dots: false,
-	autoplayTimeout: 500000,
+	autoplayTimeout: 5000,
 	autoplaySpeed: 500,
 	autoplayHoverPause: true,
 	slideTransition: 'linear',
@@ -104,7 +104,6 @@ function owlNavigator(right, left, name) {
 // cart sm show
 $('#cartDropdownSm').on('click', function () {
 	$('.header__cart-dropdown-content-sm')[0].classList.toggle('d-block');
-	console.log("hello")
 	$('.header__shopping-icon-sm')[0].classList.toggle('shop-icon-color');
 })
 $('#cartPhoneSm').on('click', function () {
@@ -131,7 +130,6 @@ $("#headerDropdownBtnSm").on("click", function () {
 	}
 	$(".header__menu-list_sm")[0].classList.toggle("d-block");
 	var menu = $(".header__dropdown-content_sm")[0];
-	console.log(menu)
 	if (menu.style.maxHeight) {
 		menu.style.maxHeight = null;
 	} else {

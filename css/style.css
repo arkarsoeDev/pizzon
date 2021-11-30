@@ -172,15 +172,15 @@ input[type="date"].mobile
 }
 
 .active .home__showcase-2__text .home-big-text {
-  animation: slideInRight;
-  animation-fill-mode: both;
-  animation-duration: 0.8s;
+  transform: translateX(0px);
+  transition: all 1s;
+  transition-delay: 0.5s;
 }
 
 .active .home__showcase-2__text .home-caption-quote {
-  animation: slideInRight;
-  animation-fill-mode: both;
-  animation-duration: 1s;
+  transform: translateX(0px);
+  transition: all 1.5s;
+  transition-delay: 0.5s;
 }
 
 .active .home__showcase-3__text .home-big-text {
@@ -371,6 +371,10 @@ input[type="date"].mobile
 .header .navbar {
   margin: 0;
   padding: 0;
+}
+
+.phone-hover:hover{
+  cursor: pointer;
 }
 
 .pizza-nav{
@@ -576,7 +580,7 @@ input[type="date"].mobile
   position: fixed;
   right: 0;
   width: auto;
-  top: 59px;
+  top: 58px;
 }
 
 .header__cart-item__cross-btn {
@@ -755,6 +759,15 @@ input[type="date"].mobile
 .home__showcase-1__text,.home__showcase-2__text{
   text-align: center;
 }
+
+.home__showcase-2__text .home-big-text {
+  transform: translateX(5000px);
+}
+
+.home__showcase-2__text .home-caption-quote {
+  transform: translateX(5000px);
+}
+
 
 .home__showcase-3 {
   padding: 6rem 5px 0 5px;
@@ -1778,6 +1791,8 @@ input[type="date"].mobile
   padding: 5px 15px;
   border: 1px solid #dddddd;
   border-radius: 20px;
+  transition: .4s;
+
 }
 .blog__tagname a {
   font-size: 14px;
@@ -1789,10 +1804,13 @@ input[type="date"].mobile
   line-height: 14px;
 }
 
-.blog__tagname a:hover {
+.blog__tagname li:hover a{
   color: var(--white);
+}
+.blog__tagname li:hover{
   background-color: var(--main);
   border: 1px solid var(--main);
+  cursor: pointer;
 }
 .blog__special {
   background-color: #f5f5f5;
@@ -2591,6 +2609,7 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
   background-color: var(--white);
   color: var(--main);
   text-decoration: none;
+  cursor: pointer;
 }
 .cart .mt {
   margin-top: 3rem;
@@ -2954,6 +2973,9 @@ clicked(u can find that in app.js >> custom-select >> closeAllSelect -function) 
     border: 10px solid var(--main);
     letter-spacing: var(--ls);
     font-weight: bold;
+    margin: 0;
+  }
+  .booking__des{
     margin: 0;
   }
   .booking__book-btn{
